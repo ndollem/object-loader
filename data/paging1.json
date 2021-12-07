@@ -1,0 +1,33 @@
+{
+    "rows": [
+        {
+            "id": "3",
+            "templateId": "layout1",
+            "attributes": [
+                {
+                    "name": "ads",
+                    "values": "<div class='m-auto text-center'>this is ads</div>",
+                    "script": ""
+                },
+                {
+                    "name": "content",
+                    "values": "lorem ispum sit dolor amet"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "templateId": "layout1",
+            "attributes": [
+                {
+                    "name": "ads",
+                    "values": "this is ads"
+                },
+                {
+                    "name": "content",
+                    "values": "Ut enim dolor, eleifend eu condimentum id, aliquam eget arcu. "
+                }
+            ]
+        }
+    ]
+}
