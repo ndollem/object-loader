@@ -126,9 +126,9 @@ docReady(function(doc) {
         this.newContainer = document.createElement('div');
         this.newContainer.setAttribute('class', 'screen-page');
         this.newContainer.setAttribute('id', pagingName+this.nextPage);
-        console.log('curPage '+curPage);
-        console.log('curPaging '+curPaging);
-        console.log('nextPage '+this.nextPage);
+        //console.log('curPage '+curPage);
+        //console.log('curPaging '+curPaging);
+        //console.log('nextPage '+this.nextPage);
 
         //reading json template
         if(this.dt = formatData(this.nextPage))
@@ -148,7 +148,7 @@ docReady(function(doc) {
             
             //add page with new content based on correct template
             vm = function(dt){
-                console.log(dt.viewModel);
+                //console.log(dt.viewModel);
                 layoutViewModel = dt.viewModel;
                 layoutScript = function(elements){
                     //put post render script here!
@@ -205,8 +205,7 @@ docReady(function(doc) {
             //console.log(this.dt);
             return {
                 'templateName': this.rawdt['templateId'],
-                'viewModel': this.dt,
-                'script': 'console.log("test ajah")'
+                'viewModel': this.dt
             };
         }else return false;
     }
