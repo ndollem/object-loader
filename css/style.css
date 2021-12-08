@@ -43,8 +43,14 @@
   padding: 5px 10px;
   background-color: #ccc;
   text-align: center;
+  min-height: 40px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAvVJREFUaEPtlrFPFEEUxr+3dxz4B2hs5ObYq4jGgsRYaCGSiBQYExMbTIyJ/wIUtsZCau00FsQYSYTGxIbOFqMUF3PcHruGs1G7EyLc7jO7cIBwudnZmYmB3LUz+973e997c49wzH90zPWjB/C/Hew50HNAswInv4XKQlxGiIecw7zn+x80Cyb9fHh4uLD1e/NlCB7PgWdqQfCi20dSB0pF4TnAEIAQhCnP999IVWS8EIv/s7ExD8bkTghe8YLgohaAWxRLAEaTcOAWEd2zAXFUfJyRpr1gbVYLoFwun+ZWawmMC7uBQmK6X/u2Npex0Ec+i8VvNptvHXJu7R0Snnq+PyPLIW2hOIBNCB3xiUcywva5DQhd8UoApp0wIV4ZwBSEKfGZAHQhTIrPDJAVoqN48KwXBNNpZ/HwvdRD3CmBymDbEK/lgMrrZEu8EQBZO9kUbwwgDuS67hnE/9ig8+21w2HnATt8Z3+3SVI+8YK1R1l7XnkGhBADfUSX+pqnPlV+VJrdEneYiUPX0w2sK8Q4RbgRRc7z+np9tVtO6RC7g+I9CBMAV3NhOFpdX29kg0gnvjxYmmLiVwByAH/0guCqFsBQUdQJKCVBGKu5qHVNHSKL+DgdFuuBf1sLwC0WbzJjkYgKGSAeE/NKLQieyXr+38oDzPhcCLfHvjYav7QAkgEVYhwRFkAYUIGQiW6fu0LcZeY5AuUTo1OKV3qFbEEcFk8Rf8lHreuyyrfhpUN8sIpxO4HpnSknOol3wv6x6vfqz7TuKQEk7WQIwoR4pRYy6YQp8ZkBdJwwKV4LoA3BjAUi6k/zOpkWrw2gAmFDvBGANBC2xBsD6AYR5vNXDv5Jxe+86lOp/U+c9k0unytNRhTNt9cOBhoEnN1ZzADT4o06sLcW7OxO+4O9e2BDvBWATu1kS7w1gDhw0k4OvyZCJbdVmFBZD9K2rFWAOPjIyEjf8vLytoog1bvKu5BqAtv3ewC2KyyL33NAViHb5z0HbFdYFv8vrd6CT9Jg5MEAAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
-
 
 /*Paralax section ------------------------------------------------------------------------------------------------------------------------*/
 /*.container {
