@@ -16,46 +16,107 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <link href="css/style.css" rel="stylesheet" />
     <script>
+        /*-- IMPORTANT to load initial data on head for initial page*/
         var pagingContent = {
             "rows": [
                 {
-                    "id": "1",
                     "templateId": "layout1",
                     "attributes": [
                         {
-                            "name": "ads",
-                            "values": "<div class='m-auto text-center'>this is ads</div>",
-                            "script": ""
+                            "name": "bgImgUrl",
+                            "value": "background-image:url('https://cdn1-production-images-kly.akamaized.net/hWmM0PV6saNQ2w4uCcupOhwoSkw=/640x358/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3284603/original/067816900_1604312034-20201102-Aksi-Ratusan-Buruh-Tolak-UU-Cipta-Kerja-iqbal-6.jpg')",
+                            "type": "image"
                         },
                         {
-                            "name": "content",
-                            "values": "lorem ispum sit dolor amet"
+                            "name": "title",
+                            "value": "Polda Metro Jaya Lakukan Pengalihan Arus Lalu Lintas Antisipasi Demo Buruh"
+                        },
+                        {
+                            "name": "contentHtml",
+                            "value": "<p><b>Liputan6.com, Jakarta</b> <a href=\"https://www.liputan6.com/tag/polda-metro-jaya\">Polda Metro Jaya</a> menyiapkan skenario pengalihan lalu lintas untuk mengantisipasi kepadatan arus lantaran ada demo sejumlah <a href=\"https://www.liputan6.com/tag/buruh\">buruh</a> dari berbagai organisasi hari ini, Rabu (8/12/2021).</p><p>Direktur Lalu Lintas Polda Metro Jaya, Kombes Pol Sambodo Purnomo Yogo menerangkan, pihaknya membuat rencana pengalihan arus lalu lintas terutama di ruas jalan menuju Patung Kuda Arjuna Wiwaha, Jakarta Pusat.</p>",
+                            "type": "text"
+                        },
+                        {
+                            "name": "adsContainer",
+                            "value": "div-gpt-ad-headline",
+                            "type": "ads",
+                            "size": "320x100",
+                            "adunit": "dfp-hl"
                         }
                     ]
                 },
                 {
-                    "id": "2",
-                    "templateId": "layout1",
+                    "templateId": "layout2",
                     "attributes": [
                         {
-                            "name": "ads",
-                            "values": "this is ads"
+                            "name": "currentPaging",
+                            "value": "2 dari 3 halaman"
                         },
                         {
-                            "name": "content",
-                            "values": "Ut enim dolor, eleifend eu condimentum id, aliquam eget arcu. "
+                            "name": "bacaJugaAnchor",
+                            "value": "https://www.liputan6.com/news/read/4730796/alasan-korban-penembakan-di-exit-tol-bintaro-buntuti-mobil-pejabat-dki"
+                        },
+                        {
+                            "name": "bacaJugaTitle",
+                            "value": "Alasan Korban Penembakan di Exit Tol Bintaro Buntuti Mobil Pejabat DKI"
+                        },
+                        {
+                            "name": "contentHtml",
+                            "value": "<p>\"Hari ini untuk pengamanan hari unjuk rasa buruh kita sudah siapkan rekayasa lalinnya di sekitaran bundaran Patung Kuda karena diperkirakan massa buruh cukup banyak,\" kata Sambodo kepada wartawan di <a href=\"https://www.liputan6.com/news/read/4730796/alasan-korban-penembakan-di-exit-tol-bintaro-buntuti-mobil-pejabat-dki\" title=\"Polda Metro Jaya\">Polda Metro Jaya</a>, Rabu (8/12/2021).</p><p>Dia menjelaskan, penutupan jalan juga dilakukan di ruas Jalan Medan Merdeka Selatan, Jalan Gambir, Jalan Harmoni, dan seputar jalan menuju kawasan Istana Negara.</p><p>Namun demikian, pengalihan arus bersifat situasional. Seandainya peserta unjuk rasa jumlah sangat banyak tentunya akan ada penutupan jalan.</p><p>\"Nanti bisa saja penutupan dimulai dari sekitar persimpangan Thamrin-Kebon Sirih. Hari ini berbeda dengan kemarin jadi jalan Kemuliaan masih kita buka, jalan Medan Merdeka Selatan masih kita buka, kemudian Sarinah menuju ke Bundaran Patung Kuda masih kita buka,\" kata Sambodo.</p>",
+                            "type": "text"
+                        },
+                        {
+                            "name": "adsContainer",
+                            "value": "div-gpt-ad-exposer",
+                            "type": "ads",
+                            "size": "300x600",
+                            "adunit": "dfp-exposer1"
                         }
                     ]
                 }
             ]
         }
     </script>
+
+    <!--GPT Tag ads-->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+        window.googletag = window.googletag || {cmd: []};
+        googletag.cmd.push(function() {
+            googletag.defineSlot('/36504930/m.liputan6.com/dfp-headline', [[320, 100], [320, 50]], 'div-gpt-ad-headline').addService(googletag.pubads());
+            googletag.defineSlot('/36504930/m.liputan6.com/dfp-exposer', [[300, 250], [300, 600]], 'div-gpt-ad-exposer').addService(googletag.pubads());
+            googletag.defineSlot('/36504930/m.liputan6.com/dfp-sc', [300, 250], 'div-gpt-ad-showcase').addService(googletag.pubads());
+            googletag.pubads().enableLazyLoad({fetchMarginPercent: -1});
+    
+            // Register event handlers to observe lazy loading behavior.
+            googletag.pubads().addEventListener('slotRequested', function(event) {
+                updateSlotStatus(event.slot.getSlotElementId(), 'fetched');
+            });
+
+            googletag.pubads().addEventListener('slotOnload', function(event) {
+                updateSlotStatus(event.slot.getSlotElementId(), 'rendered');
+            });
+            
+            googletag.pubads().collapseEmptyDivs();
+            googletag.pubads().setTargeting('Channel', ['news']);
+            googletag.enableServices();
+        });
+        function updateSlotStatus(slotId, state) {
+            console.log(slotId + '-' + state);
+        }
+    </script>
+    <!--GPT Tag ads-->
 </head>
 <body>
     <header>
+        
+        <!--This sample page refer to original article : https://www.liputan6.com/news/read/4731389/polda-metro-jaya-lakukan-pengalihan-arus-lalu-lintas-antisipasi-demo-buruh-->
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Site logo</a>
+                <a class="navbar-brand" href="#">
+                    <img src="https://cdn0-production-assets-kly.akamaized.net/mobile_logos/188/original/030371700_1629690556-logo-liputan6-new-mobile.png" />
+                </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -65,10 +126,15 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
+                        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Stories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Bisnis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Saham</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">ShowBiz</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Bola</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Foto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tekno</a></li>
+                        <!--li class="nav-item">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -78,7 +144,7 @@
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
-                        </li>
+                        </li-->
                     </ul>
                     <form>
                         <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
@@ -90,32 +156,34 @@
         <div class="container">
             <div class="nav-scroller py-1 mb-2">
                 <nav class="nav d-flex justify-content-between">
-                    <a class="p-2 link-secondary" href="#">World</a>
-                    <a class="p-2 link-secondary" href="#">U.S.</a>
-                    <a class="p-2 link-secondary" href="#">Technology</a>
-                    <a class="p-2 link-secondary" href="#">Design</a>
-                    <a class="p-2 link-secondary" href="#">Culture</a>
-                    <a class="p-2 link-secondary" href="#">Business</a>
-                    <a class="p-2 link-secondary" href="#">Politics</a>
-                    <a class="p-2 link-secondary" href="#">Opinion</a>
-                    <a class="p-2 link-secondary" href="#">Science</a>
-                    <a class="p-2 link-secondary" href="#">Health</a>
-                    <a class="p-2 link-secondary" href="#">Style</a>
-                    <a class="p-2 link-secondary" href="#">Travel</a>
+                    <a class="p-2 link-secondary" href="#">Berita Utama</a>
+                    <a class="p-2 link-secondary" href="#">Terkini</a>
+                    <a class="p-2 link-secondary" href="#">Populer</a>
+                    <a class="p-2 link-secondary" href="#">Rekomendasi</a>
                 </nav>
             </div>
         </div>
     </header>
 
     
-    <main>
-        <div class="screen-page" id="main1">
-            <div class="pages-container">
-                <img src="https://www.cssscript.com/demo/pure-css-parallax-background-images/img/gCanyon.jpg" class="img-fluid" alt="headline image">
-                <div class=""></div>
+    <main class="wrapper">
+        <!--initial section page-->
+        <div class="screen-page" id="screen1">
+            <div class="page-container" data-bind="template: {data: layoutViewModel, afterRender: layoutScript }">
+                <section class="module parallax" data-bind="attr: {style: bgImgUrl}"></section>
+                <!--first section -->
+                <section class="module content">
+                    <div class="container">
+                        <h2 data-bind="text: title"></h2>
+                        <div data-bind="attr: {id: adsContainer}, adsCall: showAds" class="banner"></div>
+                        <div data-bind="html: contentHtml"></div>
+                    </div>
+                </section>
             </div>
         </div>
-        <btn-next data-part="1"></btn-next>
+        
+        <!--Next action button-->
+        <a id="btnNext" class="next-page-btn" data-part="1" data-paging="1"><i class="bi bi-chevron-double-down"></i></a>
     </main>
 
 
@@ -123,17 +191,131 @@
         
     </footer>
 
-    <!--Template section-->
+    <!--Templates section-->
     <template id="layout1">
-        <div class="ads">
-            {{__ads__}}
+        <div class="page-container" data-bind="template: {data: layoutViewModel, afterRender: layoutScript }">
+            <section class="module parallax" data-bind="attr: {style: bgImgUrl}"></section>
+            <!--first section -->
+            <section class="module content">
+                <div class="container">
+                    <h2 data-bind="text: title"></h2>
+                    <div data-bind="attr: {id: adsContainer}, adsCall: showAds" class="banner"></div>
+                    <div data-bind="html: contentHtml"></div>
+                </div>
+            </section>
         </div>
-        <div class="content">{{__content__}}</div>
     </template>
-    <!--Template section end-->
+    <template id="layout2">
+        <div class="page-container" data-bind="template: {data: layoutViewModel, afterRender: layoutScript }">
+            <div class="article-content-body__item-break" data-component-name="desktop:read-page:article-content-body:section:pageend">
+                <hr class="article-content-body__item-break-line">
+                <div data-bind="text: currentPaging" class="article-content-body__item-break-index"></div>
+            </div>
+            <section class="module content">
+                <div class="container">
+                    <div data-bind="attr: {id: adsContainer}, adsCall: showAds" class="banner"></div>
+                    <div class="baca-juga-collections">
+                        <div class="baca-juga-collections__detail"> 
+                            BACA JUGA: 
+                            <a target="_blank" data-bind="attr: {href: bacaJugaAnchor}, text: bacaJugaTitle" href="#"></a>
+                        </div>
+                    </div>
+                    <div data-bind="html: contentHtml"></div>
+                </div>
+            </section>
+        </div>
+    </template>
+    <template id="layout3">
+        <div class="page-container" data-bind="template: {data: layoutViewModel, afterRender: layoutScript }">
+            <div data-bind="attr: {id: adsContainer}, adsCall: showAds"></div>
+            <div data-bind="attr: {id: videoID}" id="" class="article-video-gallery--item article-video-gallery--item_normal" data-component-name="mobile:article-video-gallery:item">
+                <iframe data-bind="attr: {src: videoUrl}" 
+                    class="vidio-embed article-video-gallery--item__vidio-embed"
+                    src=""
+                    frameborder="0"
+                    scrolling="no"
+                    allowfullscreen
+                    data-component-name="ui:iframe:vidio"
+                ></iframe>
+            </div>
+            <section class="module content">
+                <div class="container">
+                    <!-- Composite Start -->
+                    <div id="M459119ScriptRootC1231848" data-identifier="mgid-ad"></div>
+                    <script src="https://jsc.mgid.com/l/i/liputan6.com.1231848.js" async></script>
+                    <!-- Composite End -->
 
+                    <!-- KLY Internal tracking for MGID in article -->
+                    <script>
+                        imgTracker = document.createElement("img");
+                        imgTracker.style = "width:1px;height:1px;display:none;visibility:hidden;";
+                        imgTracker.src = "https://adserver.kl-youniverse.com/ck.php?oaparams=2__bannerid=428__zoneid=74__cb="+ (Math.floor(Math.random() * (9999999 - 1000000)) + 1000000);
+                        document.querySelector("body").appendChild(imgTracker); 
+                    </script>
+                    <!-- END KLY Internal tracking for MGID in article -->
+                </div>
+            </section>
+        </div>
+    </template>
+    <template id="layout4">
+        <div class="page-container" data-bind="template: {data: layoutViewModel, afterRender: layoutScript }">
+            <div class="carousel-cont picturefirst">
+                <h1 class="picturefirst__logo picturefirst__logo_volume">
+                    <a href="/" aria-label="logo">
+                        <img src="https://cdns.klimg.com/d.kapanlaginetwork.com/banner/preview/2021/12/08/stories-logo.png" alt="logo" width="186" height="46">
+                    </a>
+                </h1>
+                <div class="slider">
+                    <div class="slides" data-bind="foreach: pictureFirstItems">
+                        <div class="slide-item">
+                            
+                                <a data-bind="attr: {href: url}" href="#">
+                                    <img data-bind="attr: {src: img}" src="#"> 
+                                    <p data-bind="text: title"></p>
+                                </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="module content">
+                <div class="container">
+                    <!-- Composite Start -->
+                    <div id="M459119ScriptRootC1227855" data-identifier="mgid-ad"></div>
+                    <script src="https://jsc.mgid.com/l/i/liputan6.com.1227855.js" async></script>
+                    <!-- Composite End -->
+
+                    <!-- KLY Internal tracking for MGID in article -->
+                    <script>
+                        imgTracker = document.createElement("img");
+                        imgTracker.style = "width:1px;height:1px;display:none;visibility:hidden;";
+                        imgTracker.src = "https://adserver.kl-youniverse.com/ck.php?oaparams=2__bannerid=410__zoneid=74__cb=" + (Math.floor(Math.random() * (9999999 - 1000000)) + 1000000);
+                        document.querySelector("body").appendChild(imgTracker);
+                    </script>
+                    <!-- END KLY Internal tracking for MGID in article -->
+                </div>
+            </section>
+        </div>
+    </template>
+    <template id="layout5">
+        <div class="page-container" data-bind="template: {data: layoutViewModel, afterRender: layoutScript }">
+            
+        </div>
+    </template>
+    <!--END Templates section-->
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
     <script src="js/script.js"></script>
+    <script type="text/javascript">
+        function showAds(adsName, size)
+        {
+            console.log('init showads');
+            console.log(adsName);
+            console.log(size);
+            googletag.cmd.push(function() { googletag.display(adsName); });
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <title>Pure CSS Parallax Background Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+        <link href="css/style.css" rel="stylesheet" />
+    
+        <style>
+            .container {
+                margin: 0 auto;
+            }
+
+            section.module:last-child {
+                margin-bottom: 0;
+            }
+
+            section.module h2 {
+                margin-bottom: 40px;
+                font-size: 30px;
+            }
+
+            section.module p {
+                margin-bottom: 40px;
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            section.module p:last-child {
+                margin-bottom: 0;
+            }
+
+            section.module.content {
+                padding: 40px 0;
+            }
+
+            section.module.parallax {
+                height: 600px;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            section.module.parallax h1 {
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 48px;
+                line-height: 600px;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+                text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+
+            section.module.parallax-1 {
+                background-image: url("https://www.cssscript.com/demo/pure-css-parallax-background-images/img/gCanyon.jpg");
+            }
+
+            @media all and (min-width: 600px) {
+                section.module h2 {
+                    font-size: 42px;
+                }
+
+                section.module p {
+                    font-size: 20px;
+                }
+
+                section.module.parallax h1 {
+                    font-size: 96px;
+                }
+            }
+            @media all and (min-width: 960px) {
+                section.module.parallax h1 {
+                    font-size: 160px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="module parallax parallax-1">
+            <div class="container">
+                <h1>This</h1>
+            </div>
+        </section>
+        <!--first section -->
+        <section class="module content">
+            <div class="container">
+                <h2>Pure CSS Parallax Background Demo</h2>
+                <p>
+                    Ut enim dolor, eleifend eu condimentum id, aliquam eget arcu. Nullam egestas lectus augue, sed faucibus risus consectetur in. Quisque eget diam lorem. In sit amet ex eget nulla volutpat consectetur. Donec lobortis
+                    commodo suscipit. Morbi consectetur orci volutpat, laoreet elit in, pulvinar magna. Ut vestibulum imperdiet erat sodales egestas. Vivamus commodo diam sapien, quis pellentesque lacus ultrices sed. Maecenas lobortis id
+                    velit eget rutrum. Fusce congue id velit quis pellentesque. Proin imperdiet ligula eu libero iaculis posuere. Ut blandit, quam eget dignissim pharetra, erat enim laoreet ipsum, et tincidunt sapien quam sed ante. Donec
+                    dignissim et risus non sollicitudin. Sed sit amet tortor scelerisque lectus sodales tristique.
+                </p>
+            </div>
+        </section>
+        
+
+        <div class="carousel-cont">
+            <div class="slider">
+                <div class="slides">
+
+                    <div class="slide-item">
+                        <div class="tb-place-carousel-item">
+                            <a href="https://www.tripboba.com/bucket-list_first-time-tourists-guide_br-brazil_br-17-campina-grande.html">
+                                <img class="lazy" src="https://d1shwc4yijf729.cloudfront.net/resized/440x220/assets/2020/05/22/city-buildings-beside-lake-1579384_6_5ec75dd32c646.webp" data-src="https://d1shwc4yijf729.cloudfront.net/resized/440x220/assets/2020/05/22/city-buildings-beside-lake-1579384_6_5ec75dd32c646.webp" data-loaded="true"> 
+                                                                    <h3>Campina Grande</h3>
+                                <span><i class="fa fa-map-marker"></i>BRAZIL</span> 
+
+                            </a>
+                        </div>
+                    </div>
+                                            <div class="slide-item">
+                        <div class="tb-place-carousel-item">
+                            <a href="https://www.tripboba.com/bucket-list_first-time-tourists-guide_de-germany_de-12-wismar.html">
+                                <img class="lazy" src="https://d1shwc4yijf729.cloudfront.net/resized/440x220/assets/2020/04/21/2475506633-ddc5943072-k_9_5e9edc3ead070.webp" data-src="https://d1shwc4yijf729.cloudfront.net/resized/440x220/assets/2020/04/21/2475506633-ddc5943072-k_9_5e9edc3ead070.webp" data-loaded="true"> 
+                                                                    <h3>Wismar</h3>
+                                <span><i class="fa fa-map-marker"></i>GERMANY</span> 
+
+                            </a>
+                        </div>
+                    </div>
+                                            <div class="slide-item">
+                        <div class="tb-place-carousel-item">
+                            <a href="https://www.tripboba.com/bucket-list_first-time-tourists-guide_us-united-states_us-sc-clemson.html">
+                                <img class="lazy" src="https://d1shwc4yijf729.cloudfront.net/resized/440x220/assets/2020/03/26/clemson-south-carolina-us_11_5e7c6c989d7dd.webp" data-src="https://d1shwc4yijf729.cloudfront.net/resized/440x220/assets/2020/03/26/clemson-south-carolina-us_11_5e7c6c989d7dd.webp" data-loaded="true"> 
+                                                                    <h3>Clemson</h3>
+                                <span><i class="fa fa-map-marker"></i>UNITED STATES</span> 
+
+                            </a>
+                        </div>
+                    </div>
+                                            <div class="slide-item">
+                        <div class="tb-place-carousel-item">
+                            <a href="https://www.tripboba.com/bucket-list_first-time-tourists-guide_us-united-states_us-ca-sacramento.html">
+                                <img class="lazy" src="https://d1shwc4yijf729.cloudfront.net/resized/440x220/buckets/2020/02/17/vCgL8YHKAJ6uaPprOCn46YmdaEd027IP6S4VhdoW.webp" data-src="https://d1shwc4yijf729.cloudfront.net/resized/440x220/buckets/2020/02/17/vCgL8YHKAJ6uaPprOCn46YmdaEd027IP6S4VhdoW.webp" data-loaded="true"> 
+                                                                    <h3>Sacramento</h3>
+                                <span><i class="fa fa-map-marker"></i>UNITED STATES</span> 
+
+                            </a>
+                        </div>
+                    </div>
+                                            <div class="slide-item">
+                        <div class="tb-place-carousel-item">
+                            <a href="https://www.tripboba.com/bucket-list_first-time-tourists-guide_sv-el-salvador_sv-10-san-salvador.html">
+                                <img class="lazy" src="https://d1shwc4yijf729.cloudfront.net/resized/440x220/assets/2020/03/30/45189001185-056304bb37-k_9_5e8162a21ff4f.webp" data-src="https://d1shwc4yijf729.cloudfront.net/resized/440x220/assets/2020/03/30/45189001185-056304bb37-k_9_5e8162a21ff4f.webp" data-loaded="true"> 
+                                                                    <h3>San Salvador</h3>
+                                <span><i class="fa fa-map-marker"></i>EL SALVADOR</span> 
+
+                            </a>
+                        </div>
+                    </div>
+                                            <div class="slide-item">
+                        <div class="tb-place-carousel-item">
+                            <a href="https://www.tripboba.com/bucket-list_first-time-tourists-guide_ca-canada_ca-10-mont-tremblant.html">
+                                <img class="lazy" src="https://d1shwc4yijf729.cloudfront.net/resized/440x220/assets/2020/04/27/image-by-ana-arian-from-google-maps_7_5ea6a8e980e5e.webp" data-src="https://d1shwc4yijf729.cloudfront.net/resized/440x220/assets/2020/04/27/image-by-ana-arian-from-google-maps_7_5ea6a8e980e5e.webp" data-loaded="true"> 
+                                                                    <h3>Mont-Tremblant</h3>
+                                <span><i class="fa fa-map-marker"></i>CANADA</span> 
+
+                            </a>
+                        </div>
+                    </div>
+                                            <div class="slide-item">
+                        <div class="tb-place-carousel-item">
+                            <a href="https://www.tripboba.com/bucket-list_first-time-tourists-guide_no-norway_no-7-bergen.html">
+                                <img class="lazy" src="https://d1shwc4yijf729.cloudfront.net/resized/440x220/assets/2020/03/06/48664989623-44a1ac8834-h_9_5e62302bb1947.webp" data-src="https://d1shwc4yijf729.cloudfront.net/resized/440x220/assets/2020/03/06/48664989623-44a1ac8834-h_9_5e62302bb1947.webp" data-loaded="true"> 
+                                                                    <h3>Bergen</h3>
+                                <span><i class="fa fa-map-marker"></i>NORWAY</span> 
+
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="slide-item ">
+                        <div class="tb-place-carousel-item">
+                            <a href="https://www.tripboba.com/bucket-list">
+                            Show more
+                            <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .carousel-cont .slider {
+                height: 14rem;
+            }
+            .carousel-cont .slider {
+                width: 100%;
+                text-align: center;
+                overflow: hidden;
+                margin: 0 auto;
+            }
+            .carousel-cont .slides {
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+                -webkit-overflow-scrolling: touch;
+            }
+            .carousel-cont .slides .slide-item {
+                scroll-snap-align: start;
+                flex-shrink: 0;
+                width: 12rem;
+                height: 14rem;
+                overflow: hidden;
+                border-radius: 5px;
+                border: solid 1px #fff;
+                background: #eee;
+                transform-origin: center center;
+                transform: scale(1);
+                transition: transform .5s;
+                position: relative;
+                margin: 0 10px 10px 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </body>
+</html>

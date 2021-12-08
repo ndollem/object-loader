@@ -1,140 +1,118 @@
-(function(funcName, baseObj) {
-    // The public function name defaults to window.docReady
-    // but you can pass in your own object and own function name and those will be used
-    // if you want to put them in a different namespace
-    funcName = funcName || "docReady";
-    baseObj = baseObj || window;
-    var readyList = [];
-    var readyFired = false;
-    var readyEventHandlersInstalled = false;
+class BtnNext extends HTMLElement {
+    constructor() {
+        super();
+        this.url = 'data/paging';
+        //this.initialData = window.pagingContent;
+        //console.log(this.initialData);
 
-    // call this when the document is ready
-    // this function protects itself against being called more than once
-    function ready() {
-        if (!readyFired) {
-            // this must be set to true before we start calling callbacks
-            readyFired = true;
-            for (var i = 0; i < readyList.length; i++) {
-                // if a callback here happens to add new ready handlers,
-                // the docReady() function will see that it already fired
-                // and will schedule the callback to run right after
-                // this event loop finishes so all handlers will still execute
-                // in order and no new ones will be added to the readyList
-                // while we are processing the list
-                readyList[i].fn.call(window, readyList[i].ctx);
+        // Setup a click listener on <app-drawer> itself.
+        this.addEventListener('click', e => {
+            // Don't toggle the drawer if it's disabled.
+            if (this.disabled) {
+                return;
             }
-            // allow any closures held by these functions to free
-            readyList = [];
-        }
+        this.callNext();
+      });
     }
 
-    function readyStateChange() {
-        if ( document.readyState === "complete" ) {
-            ready();
-        }
+    // A getter/setter for a disabled property.
+    get disabled() {
+        return this.hasAttribute('disabled');
     }
 
-    // This is the one public interface
-    // docReady(fn, context);
-    // the context argument is optional - if present, it will be passed
-    // as an argument to the callback
-    baseObj[funcName] = function(callback, context) {
-        if (typeof callback !== "function") {
-            throw new TypeError("callback for docReady(fn) must be a function");
-        }
-        // if ready has already fired, then just schedule the callback
-        // to fire asynchronously, but right away
-        if (readyFired) {
-            setTimeout(function() {callback(context);}, 1);
-            return;
+    set disabled(val) {
+        // Reflect the value of the disabled property as an HTML attribute.
+        if (val) {
+            this.setAttribute('disabled', '');
         } else {
-            // add the function and context to the list
-            readyList.push({fn: callback, ctx: context});
-        }
-        // if document already ready to go, schedule the ready function to run
-        if (document.readyState === "complete") {
-            setTimeout(ready, 1);
-        } else if (!readyEventHandlersInstalled) {
-            // otherwise if we don't have event handlers installed, install them
-            if (document.addEventListener) {
-                // first choice is DOMContentLoaded event
-                document.addEventListener("DOMContentLoaded", ready, false);
-                // backup is window load event
-                window.addEventListener("load", ready, false);
-            } else {
-                // must be IE
-                document.attachEvent("onreadystatechange", readyStateChange);
-                window.attachEvent("onload", ready);
-            }
-            readyEventHandlersInstalled = true;
+            this.removeAttribute('disabled');
         }
     }
-})("docReady", window);
 
+    connectedCallback() {
+        this.innerHTML = "<i class='bi bi-chevron-double-down'></i>";
+    }
 
-docReady(function(doc) {
-    //define view model
-    var vm = [];
-    //define name of page container
-    const pagingName = "screen";
-    //define button next to load data
-    const btnNext = document.getElementById("btnNext");
-    //get current paging number
-    var curPage = btnNext.getAttribute('data-part');
-    
-
-        
-
-    initPage();
-
-    function initPage()
+    callNext()
     {
-        //preparing view models
-        for (var key of Object.keys(window.pagingContent)) {
-            console.log(key + " -> " + window.pagingContent[key]);
+        //get current paging number
+        this.page = this.getAttribute('data-part');
+        console.log(this.page);
+
+        //fetch json data
+        this.loadNext = this.collectData(this.url + this.page + ".json")
+            .then(response => {
+
+                //merge new fetched data into initial paging data variable
+                for (var key of Object.keys(response.rows)) {
+                    window.pagingContent.rows.push( new Object(response.rows[key]));
+                }
+
+            });
+
+        console.log(window.pagingContent.rows);
+
+        this.updatingContent(window.pagingContent.rows[this.page]);
+    }
+
+    async collectData(url)
+    {
+        return fetch(url)
+        .then( async (data) => {
+            if (data.ok) {
+                data = await data.json();
+                
+                return data;
+
+            }else{
+                //disabling button
+                this.disabled = true;
+
+                // make the promise be rejected if we didn't get a 2xx response
+                throw new Error("Not 2xx response");  
+                return false;              
+            }
+        }).catch(e => console.log('Connection error', e))
+    }
+
+    /**
+     * append template object to next container
+     */
+    updatingContent(data)
+    {
+            console.log(data);
+
+            //reading template
+            let tmpl = document.querySelector('#layout1');
+            
+            //mapping data value to template base
+            this.currentContent = this.mappingTemplate(tmpl, data);
+            
+            //creating new main container
+            this.nextPage = parseInt(this.page)+1;
+            this.newContainer = document.createElement('div');
+            this.newContainer.setAttribute('class', 'screen-page');
+            this.newContainer.setAttribute('id', 'main'+this.nextPage);
+
+            //put template content to new container
+            this.newContainer.appendChild(tmpl.content.cloneNode(true));
+
+            //inserting new element to main document
+            this.currentContainer = document.getElementById("main"+this.page);
+            this.currentContainer.insertAdjacentElement("afterend", this.newContainer);
+
+            //updateing button paging index
+            this.setAttribute('data-part', parseInt(this.page)+1);
+    }
+
+    mappingTemplate(tmpl, dataRows)
+    {
+        for (var key of Object.keys(dataRows)) {
+            console.log(key + " -> " + dataRows[key]);
             
         }
     }
 
-    
-    vm[curPage] = function(){
-        this.imgUrl = ko.observable("https://www.cssscript.com/demo/pure-css-parallax-background-images/img/gCanyon.jpg");
-        this.content = 'lorem ipsum';
-    }
-    
-    ko.applyBindings(vm[curPage], document.getElementById(pagingName+curPage));
+}
 
-    document.getElementById("btnNext").addEventListener("click", loadNext);
-
-    function loadNext()
-    {
-        //get current paging number
-        curPage = btnNext.getAttribute('data-part');
-
-
-        //reading template
-        let tmpl = document.querySelector('#layout1');
-        
-        //creating new main container
-        this.nextPage = parseInt(curPage)+1;
-        this.newContainer = document.createElement('div');
-        this.newContainer.setAttribute('class', 'screen-page');
-        this.newContainer.setAttribute('id', pagingName+this.nextPage);
-
-        //put template content to new container
-        this.newContainer.appendChild(tmpl.content.cloneNode(true));
-
-        //inserting new element to main document
-        this.currentContainer = document.getElementById(pagingName+curPage);
-        this.currentContainer.insertAdjacentElement("afterend", this.newContainer);
-
-        //updateing button paging index
-        this.setAttribute('data-part', this.nextPage);
-
-        vm[curPage] = function(){
-            this.imgUrl = ko.observable("https://www.cssscript.com/demo/pure-css-parallax-background-images/img/rMountains.jpg");
-            this.content = 'lorem ipsum';
-        }
-        ko.applyBindings(vm[curPage], document.getElementById(pagingName+this.nextPage));
-    }
-}, document);
+window.customElements.define('btn-next', BtnNext);

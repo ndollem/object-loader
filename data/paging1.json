@@ -1,31 +1,51 @@
 {
     "rows": [
         {
-            "id": "3",
-            "templateId": "layout1",
+            "templateId": "layout3",
             "attributes": [
                 {
-                    "name": "ads",
-                    "values": "<div class='m-auto text-center'>this is ads</div>",
-                    "script": ""
+                    "name": "videoID",
+                    "value": "video-3643678"
                 },
                 {
-                    "name": "content",
-                    "values": "lorem ispum sit dolor amet"
+                    "name": "videoUrl",
+                    "value": "https://www.vidio.com/embed/2363106-3-ribu-buruh-demo-tolak-kenaikan-ump-yang-tak-sesuai-di-patung-kuda-jakpus-liputan-6?source=liputan6-news&medium=embed&autoplay=false&mute=true&player_only=true&sticky=false&embed_position=article-embed"
+                },
+                {
+                    "name": "adsContainer",
+                    "value": "div-gpt-ad-headline",
+                    "type": "ads",
+                    "size": "320x100",
+                    "adunit": "dfp-hl"
                 }
             ]
         },
         {
-            "id": "4",
-            "templateId": "layout1",
+            "templateId": "layout2",
             "attributes": [
                 {
-                    "name": "ads",
-                    "values": "this is ads"
+                    "name": "currentPaging",
+                    "value": "3 dari 3 halaman"
                 },
                 {
-                    "name": "content",
-                    "values": "Ut enim dolor, eleifend eu condimentum id, aliquam eget arcu. "
+                    "name": "bacaJugaAnchor",
+                    "value": "https://www.liputan6.com/news/read/4730796/alasan-korban-penembakan-di-exit-tol-bintaro-buntuti-mobil-pejabat-dki"
+                },
+                {
+                    "name": "bacaJugaTitle",
+                    "value": "Alasan Korban Penembakan di Exit Tol Bintaro Buntuti Mobil Pejabat DKI"
+                },
+                {
+                    "name": "contentHtml",
+                    "value": "<p>Sambodo mengatakan, pihaknya juga telah memetakan kantong kantong parkir yang diperuntukan kendaraan bus. Adapun, kantong pakir disediakan di Jalan Medan Merdeka Selatan.</p><p>Berdasarkan pantauan petugas di lapangan, sebagian besar buruh dari Bekasi, Tangerang, Pulogadung, Cilincing, mulai bergerak ke arah Patung Kuda dan rata-rata menumpang bus.</p><p>\"Maka itu kantong parkir bus nanti kita tempatkan di seputar Jalan Medan Merdeka Selatan karena setelah dari Bundaran Patung Kuda diperkirakan nanti buruh akan mampir ke sekitaran Balai Kota,\" ujar dia.</p><p>Terkait hal ini, Sambodo menyebut 400 personel dari Polantas dipersiapkan untuk mengamankan aksi unjuk rasa di berbagai kawasan. Selain di Patung Kuda Arjuna Wiwaha.</p><p>\"Karena ini ada beberapa titik di MPR DPR juga ada, di KPK ada, di Kemenaker juga ada, di Balai Kota juga ada, dan yang bagian besar di Patung Kuda,\" kata dia.</p>",
+                    "type": "text"
+                },
+                {
+                    "name": "adsContainer",
+                    "value": "div-gpt-ad-showcase",
+                    "type": "ads",
+                    "size": "300x250",
+                    "adunit": "dfp-sc"
                 }
             ]
         }

@@ -35,7 +35,6 @@
 
 .screen-page{
     min-height: 90vh;
-    border-bottom: solid 1px #ccc;
 }
 .next-page-btn{
   margin: 0 auto;
@@ -44,4 +43,197 @@
   padding: 5px 10px;
   background-color: #ccc;
   text-align: center;
+}
+
+
+/*Paralax section ------------------------------------------------------------------------------------------------------------------------*/
+/*.container {
+  margin: 0 auto;
+}
+*/
+section.module.parallax {
+  margin-bottom: 40px;
+}
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+section.module p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+section.module p:last-child {
+  margin-bottom: 0;
+}
+
+section.module.content {
+  padding-bottom: 30px;
+}
+
+section.module.parallax {
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/*
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+*/
+@media all and (min-width: 600px) {
+  section.module h2 {
+      font-size: 42px;
+  }
+
+  section.module p {
+      font-size: 20px;
+  }
+
+  section.module.parallax h1 {
+      font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+      font-size: 160px;
+  }
+}
+
+/*Simple carousel for Picture first ---------------------------------------------------------------------------------------------------*/
+.picturefirst {
+  background-color: #FFCFAF !important;
+  font-family: Noto Sans,sans-serif;
+  background-color: #eec0c3;
+  padding: 15px 15px 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.picturefirst__logo_volume {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.picturefirst__logo_volume img {
+  object-fit: contain;
+  width: 106px;
+  height: 33px;
+}
+.carousel-cont .slider {
+  height: 296px;
+}
+.carousel-cont .slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.carousel-cont .slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.carousel-cont .slides .slide-item {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 170px;
+  height: 296px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform .5s;
+  position: relative;
+  margin: 0 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-cont .slides .slide-item a img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-cont .slides .slide-item a p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 13px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 999;
+  line-height: 1.4em;
+  margin: 0;
+  z-index: 2;
+  text-shadow: 0 4px 3px rgb(0 0 0 / 25%);
+}
+
+/*Liputan6 article style---------------------------------------------------------------------------------------------------------------*/
+.banner{
+  margin: 20px auto;
+  background-color: rgb(235, 235, 235);
+  text-align: center;
+}
+.baca-juga-collections__detail {
+  margin: 20px 0;
+  position: relative;
+  border-left: 5px solid #F60;
+  padding-left: 10px;
+  font-weight: 600;
+  color: #000;
+}
+.vidio-embed{
+  width: 100vw;
+  height: 56vw;
+  margin: 0 auto 40px auto;
+}
+
+.article-content-body__item-break {
+  position: relative;
+  clear: both;
+}
+.article-content-body__item-break-index {
+  position: absolute;
+  display: block;
+  top: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 150px;
+  height: 1.3em;
+  background-color: #FFF !important;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.29;
+  color: #606060;
+}
+.article-content-body__item-break-line {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border: 0;
+  border-top: 1px solid #E7E7E7;
+  box-sizing: content-box;
+  height: 0;
 }
