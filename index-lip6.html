@@ -3325,6 +3325,16 @@
                                             background-size: 25%;
                                             border-top-right-radius: 10px;
                                             border-top-left-radius: 10px;
+                                            border-bottom: solid 3px #F60;
+                                        }
+                                        @keyframes bounce { 
+                                            0% { transform: translateY(0); }
+                                            100% { transform: translateY(-20px); }
+                                        }
+                                        .bounced {
+                                            animation: bounce 0.8s;
+                                            animation-direction: alternate;
+                                            animation-iteration-count: infinite;
                                         }
                                         .vidio-embed{
                                             width: 100%;
@@ -3490,7 +3500,7 @@
 
                                         <!--Next action button-->
                                         <div id="test1"></div>
-                                        <a id="btnNext" class="next-page-btn" data-part="1" data-paging="1">
+                                        <a id="btnNext" class="next-page-btn bounced" data-part="1" data-paging="1">
                                             <!--i class="bi bi-chevron-double-down"></i-->
                                         </a>
                                     </main>
