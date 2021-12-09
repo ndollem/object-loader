@@ -243,3 +243,119 @@ section.module.parallax h1 {
   box-sizing: content-box;
   height: 0;
 }
+/*Section Baca Juga -------------------------------------------------------------------------------------------------------------------*/
+.baca-juga--v2 {
+  background-color: #FFF;
+  margin-bottom: 25px;
+  box-shadow: 0 0 15px 0 rgb(0 0 0 / 13%);
+  border-radius: 8px;
+  padding-bottom: 20px;
+}
+.baca-juga {
+  background-color: #F1F1F1;
+  width: 100%;
+  margin: 20px 30px 30px 0;
+  padding: 10px 15px;
+}
+.baca-juga--v2 .baca-juga__header {
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 700;
+  color: #F30;
+  margin-bottom: 10px;
+}
+.baca-juga__list {
+  list-style-type: square;
+  padding: 0 0 0 15px;
+  margin: 0;
+}
+.baca-juga--v2 .baca-juga__list li {
+  list-style-type: disc;
+  border-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 10px;
+  color: #000;
+  font-size: 18px;
+}
+.baca-juga__list li {
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #E3E3E3;
+  color: #FF5722;
+  list-style-position: outside;
+}
+.baca-juga--v2 .baca-juga__list li a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #333;
+}
+.baca-juga__list li a {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 700;
+  color: #444;
+  text-decoration: none;
+}
+
+.article-popular--list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.article-popular--numbered:nth-child(1) {
+  padding-top: 0;
+  border-top: 1px solid #EEE;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.article-popular--numbered:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.article-popular--numbered {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid #EEE;
+  border-top: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+.article-popular--numbered__number {
+  display: inline-block;
+  letter-spacing: -4.3px;
+  text-align: center;
+  color: #DDD;
+  font-size: 50px;
+  font-weight: 600;
+  width: 10vw;
+  margin: 10px 15px 0;
+}
+.article-popular--numbered__wrapper {
+  display: inline-block;
+  width: 70vw;
+  vertical-align: top;
+  padding-top: 10px;
+}
+.article-popular--numbered__category {
+  text-transform: uppercase;
+  color: #FF5722;
+  font-size: 10px;
+  font-weight: 600;
+}
+.article-popular--numbered__title {
+  margin: 0;
+  padding: 0;
+  max-height: 53px;
+  overflow: hidden;
+  padding-right: 16px;
+}
+.article-popular--numbered__title a {
+  font-size: 14px;
+  line-height: 1.33;
+  text-decoration: none;
+  color: #444;
+}

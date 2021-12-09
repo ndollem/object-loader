@@ -1,6 +1,29 @@
 {
     "rows": [
         {
+            "templateId": "layout3",
+            "attributes": [
+                {
+                    "name": "videoID",
+                    "value": "video-3643678"
+                },
+                {
+                    "name": "videoUrl",
+                    "value": "https://www.vidio.com/embed/2363106-3-ribu-buruh-demo-tolak-kenaikan-ump-yang-tak-sesuai-di-patung-kuda-jakpus-liputan-6?source=liputan6-news&medium=embed&autoplay=true&mute=true&player_only=true&sticky=false&embed_position=article-embed"
+                },
+                {
+                    "name": "adsContainer",
+                    "value": "div-gpt-ad-headline2",
+                    "type": "ads",
+                    "size": [
+                        [320, 100],
+                        [320, 50]
+                    ],
+                    "adunit": "dfp-hl"
+                }
+            ]
+        },
+        {
             "templateId": "layout4",
             "attributes": [
                 {
@@ -35,46 +58,6 @@
                             "img": "https://cdn-liputan6-apps.akamaized.net/storage/pagings/200x356-paging-4545469.jpeg",
                             "title": "Siapa Ayah Kandung Vanessa Angel?",
                             "url": "https://story.liputan6.com/2709581/volume-152?medium=wiget&campaign=picture-first"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "templateId": "layout6",
-            "attributes": [
-                {
-                    "name": "popularItems",
-                    "value": [
-                        {
-                            "number": "1",
-                            "category": "Blink-Blink",
-                            "title": "5 Potret Prilly Latuconsina Pakai Kebaya Saat Wisuda, Tampil Menawan Bareng Sang Mama",
-                            "url": "https://m.liputan6.com/showbiz/read/4731227/5-potret-prilly-latuconsina-pakai-kebaya-saat-wisuda-tampil-menawan-bareng-sang-mama"
-                        },
-                        {
-                            "number": "2",
-                            "category": "Hot",
-                            "title": "6 Potret Fuji Adik Bibi Ardiansyah Bareng Ria Ricis, Penampilan Hijabnya Tuai Pujian",
-                            "url": "https://m.liputan6.com/hot/read/4731528/6-potret-fuji-adik-bibi-ardiansyah-bareng-ria-ricis-penampilan-hijabnya-tuai-pujian"
-                        },
-                        {
-                            "number": "3",
-                            "category": "Blink-Blink",
-                            "title": "7 Potret Mesra Rebecca Klopper dan Junior Roberts, Hanggini Ikut Berkomentar",
-                            "url": "https://m.liputan6.com/showbiz/read/4731317/7-potret-mesra-rebecca-klopper-dan-junior-roberts-hanggini-ikut-berkomentar"
-                        },
-                        {
-                            "number": "4",
-                            "category": "Selebriti",
-                            "title": "Klarifikasi Doddy Sudrajat soal Tak Ada Nama Bibi Andriansyah dan Perubahan Nama Gala Sky",
-                            "url": "https://m.liputan6.com/showbiz/read/4731615/klarifikasi-doddy-sudrajat-soal-tak-ada-nama-bibi-andriansyah-dan-perubahan-nama-gala-sky"
-                        },
-                        {
-                            "number": "5",
-                            "category": "Selebriti",
-                            "title": "Lutfi Agizal Ungkap Malam Pertamanya 3 Hari Setelah Menikah, Menghindari Tudingan Istri Hamil Duluan",
-                            "url": "https://m.liputan6.com/showbiz/read/4731657/lutfi-agizal-ungkap-malam-pertamanya-3-hari-setelah-menikah-menghindari-tudingan-istri-hamil-duluan"
                         }
                     ]
                 }

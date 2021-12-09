@@ -84,34 +84,13 @@ docReady(function(doc) {
     //define how often we will request for new data via ajax
     const fetchStep = 2;
     //define path for json data
-    const url = 'data/paging';
+    const url = 'data/paging-full';
     
 
     initPage();
 
     function initPage()
     {
-        //console.log(window.pagingContent);
-
-        this.dt = formatData(1);
-        vm = function(dt){
-            //console.log(dt.viewModel);
-            layoutViewModel = dt.viewModel;
-            layoutScript = function(elements){
-                //put post render script here!
-            };
-        }
-        //add custom binding specific for ads
-        ko.bindingHandlers.adsCall = {
-            init: function(element, valueAccessor, allBindings, viewModel, bindingContext) {
-                // This will be called when the binding is first applied to an element
-                // Set up any initial state, event handlers, etc. here
-                showAds(viewModel.adsContainer, viewModel.adsSize, viewModel.adsUnit);
-            }
-        };
-        
-        ko.applyBindings(vm(this.dt), document.getElementById(pagingName+curPage));
-
         document.getElementById("btnNext").addEventListener("click", loadNext);
     }
 

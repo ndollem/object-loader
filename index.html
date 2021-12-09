@@ -45,7 +45,10 @@
                             "name": "adsContainer",
                             "value": "div-gpt-ad-headline",
                             "type": "ads",
-                            "size": "320x100",
+                            "size": [
+                                [320, 100],
+                                [320, 50]
+                            ],
                             "adunit": "dfp-hl"
                         }
                     ]
@@ -74,7 +77,11 @@
                             "name": "adsContainer",
                             "value": "div-gpt-ad-exposer",
                             "type": "ads",
-                            "size": "300x600",
+                            "size": [
+                                [300, 250],
+                                [300, 600],
+                                [160, 600]
+                            ],
                             "adunit": "dfp-exposer1"
                         }
                     ]
@@ -88,10 +95,10 @@
     <script>
         window.googletag = window.googletag || {cmd: []};
         googletag.cmd.push(function() {
-            googletag.defineSlot('/36504930/m.liputan6.com/dfp-headline', [[320, 100], [320, 50]], 'div-gpt-ad-headline').addService(googletag.pubads());
-            googletag.defineSlot('/36504930/m.liputan6.com/dfp-exposer', [[300, 250], [300, 600]], 'div-gpt-ad-exposer').addService(googletag.pubads());
-            googletag.defineSlot('/36504930/m.liputan6.com/dfp-sc', [300, 250], 'div-gpt-ad-showcase').addService(googletag.pubads());
-            googletag.pubads().enableLazyLoad({fetchMarginPercent: -1});
+            //googletag.defineSlot('/36504930/m.liputan6.com/dfp-headline', [[320, 100], [320, 50]], 'div-gpt-ad-headline').addService(googletag.pubads());
+            //googletag.defineSlot('/36504930/m.liputan6.com/dfp-exposer', [[300, 250], [300, 600]], 'div-gpt-ad-exposer').addService(googletag.pubads());
+            //googletag.defineSlot('/36504930/m.liputan6.com/dfp-sc', [300, 250], 'div-gpt-ad-showcase').addService(googletag.pubads());
+            //googletag.pubads().enableLazyLoad({fetchMarginPercent: -1});
     
             // Register event handlers to observe lazy loading behavior.
             googletag.pubads().addEventListener('slotRequested', function(event) {
@@ -306,7 +313,43 @@
     </template>
     <template id="layout5">
         <div class="page-container" data-bind="template: {data: layoutViewModel, afterRender: layoutScript }">
-            
+            <section class="module content">
+                <div class="container">
+                    <div data-bind="attr: {id: adsContainer}, adsCall: showAds" class="banner"></div>
+                    <div class="baca-juga baca-juga--v2" data-category="Megapolitan">
+                        <p class="baca-juga__header">Baca Juga</p>
+                        <ul class="baca-juga__list" data-bind="foreach: bacaJugaItems">
+                            <li>
+                                <a data-bind="attr: {href: url, title: title}, text: title" href="" target="_blank" title=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </template>
+    <template id="layout6">
+        <div class="page-container" data-bind="template: {data: layoutViewModel, afterRender: layoutScript }">
+            <section class="module content">
+                <div class="container">
+                    <div class="article-popular" data-component-name="mobile:popular-news">
+                        <h3 class="article-popular--title">POPULER</h3>
+                        <ul class="article-popular--list" data-bind="foreach: popularItems">
+                            <li class="article-popular--numbered">
+                                <article class="article-popular--numbered__article">
+                                    <span class="article-popular--numbered__number" data-bind="text: number"></span>
+                                    <div class="article-popular--numbered__wrapper">
+                                        <span class="article-popular--numbered__category" data-bind="text: category"></span>
+                                        <h5 class="article-popular--numbered__title">
+                                            <a data-bind="attr: {href: url}, text: title" href=""></a>
+                                        </h5>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>
+            </section>
         </div>
     </template>
     <!--END Templates section-->
@@ -316,12 +359,16 @@
     <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
     <script async defer src="js/script.js"></script>
     <script type="text/javascript">
-        function showAds(adsName, size)
+        function showAds(adsName, size, adunit)
         {
             /*console.log('init showads');
             console.log(adsName);
-            console.log(size);*/
-            googletag.cmd.push(function() { googletag.display(adsName); });
+            console.log(size);
+            console.log(adunit);*/
+            googletag.cmd.push(function() {
+                googletag.defineSlot('/36504930/m.liputan6.com/'+adunit, size, adsName).addService(googletag.pubads());
+                googletag.display(adsName);
+            });
         }
     </script>
 </body>

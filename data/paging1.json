@@ -13,9 +13,12 @@
                 },
                 {
                     "name": "adsContainer",
-                    "value": "div-gpt-ad-headline",
+                    "value": "div-gpt-ad-headline2",
                     "type": "ads",
-                    "size": "320x100",
+                    "size": [
+                        [320, 100],
+                        [320, 50]
+                    ],
                     "adunit": "dfp-hl"
                 }
             ]
@@ -44,7 +47,9 @@
                     "name": "adsContainer",
                     "value": "div-gpt-ad-showcase",
                     "type": "ads",
-                    "size": "300x250",
+                    "size": [
+                        [300, 250]
+                    ],
                     "adunit": "dfp-sc"
                 }
             ]
