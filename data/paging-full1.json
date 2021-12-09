@@ -13,7 +13,7 @@
                 },
                 {
                     "name": "adsContainer",
-                    "value": "div-gpt-ad-headline2",
+                    "value": "div-gpt-ad-headline-paging2",
                     "type": "ads",
                     "size": [
                         [320, 100],

@@ -1,29 +1,6 @@
 {
     "rows": [
         {
-            "templateId": "layout3",
-            "attributes": [
-                {
-                    "name": "videoID",
-                    "value": "video-3643678"
-                },
-                {
-                    "name": "videoUrl",
-                    "value": "https://www.vidio.com/embed/2363106-3-ribu-buruh-demo-tolak-kenaikan-ump-yang-tak-sesuai-di-patung-kuda-jakpus-liputan-6?source=liputan6-news&medium=embed&autoplay=true&mute=true&player_only=true&sticky=false&embed_position=article-embed"
-                },
-                {
-                    "name": "adsContainer",
-                    "value": "div-gpt-ad-headline2",
-                    "type": "ads",
-                    "size": [
-                        [320, 100],
-                        [320, 50]
-                    ],
-                    "adunit": "dfp-hl"
-                }
-            ]
-        },
-        {
             "templateId": "layout2",
             "attributes": [
                 {
@@ -51,6 +28,46 @@
                         [300, 250]
                     ],
                     "adunit": "dfp-sc"
+                }
+            ]
+        },
+        {
+            "templateId": "layout4",
+            "attributes": [
+                {
+                    "name": "pictureFirstItems",
+                    "value": [
+                        {
+                            "img": "https://cdn-liputan6-apps.akamaized.net/storage/pagings/200x356-paging-4563037.jpeg",
+                            "title": "Jasad yang Hilang di Bawah Abu Semeru",
+                            "url": "https://story.liputan6.com/2712433/volume-157?medium=wiget&campaign=picture-first"
+                        },
+                        {
+                            "img": "https://cdn-liputan6-apps.akamaized.net/storage/pagings/200x356-paging-4558686.jpeg",
+                            "title": "Lebih Mengancam dari Gunung Semeru",
+                            "url": "https://story.liputan6.com/2712434/volume-156?medium=wiget&campaign=picture-first"
+                        },
+                        {
+                            "img": "https://cdn-liputan6-apps.akamaized.net/storage/pagings/200x356-paging-4553842.jpeg",
+                            "title": "Ibu dan Bayi  Terkubur Lahar Semeru",
+                            "url": "https://story.liputan6.com/2712435/volume-155?medium=wiget&campaign=picture-first"
+                        },
+                        {
+                            "img": "https://cdn-liputan6-apps.akamaized.net/storage/pagings/200x356-paging-4551796-0512113220.jpeg",
+                            "title": "Duka di Kaki Semeru",
+                            "url": "https://story.liputan6.com/2711733/volume-154?medium=wiget&campaign=picture-first"
+                        },
+                        {
+                            "img": "https://cdn-liputan6-apps.akamaized.net/storage/pagings/200x356-paging-4549232.jpeg",
+                            "title": "Anak Buah Main HP, Panglima Murka",
+                            "url": "https://story.liputan6.com/2710893/volume-153?medium=wiget&campaign=picture-first"
+                        },
+                        {
+                            "img": "https://cdn-liputan6-apps.akamaized.net/storage/pagings/200x356-paging-4545469.jpeg",
+                            "title": "Siapa Ayah Kandung Vanessa Angel?",
+                            "url": "https://story.liputan6.com/2709581/volume-152?medium=wiget&campaign=picture-first"
+                        }
+                    ]
                 }
             ]
         }

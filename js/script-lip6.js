@@ -157,7 +157,7 @@ docReady(function(doc) {
             //remove next button
             if(parseInt(curPage) >= window.pagingContent.rows.length)
                 this.classList.add("d-none");
-        
+
         }else{
             this.classList.add("d-none");
         }

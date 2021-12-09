@@ -25,35 +25,6 @@
         var pagingContent = {
             "rows": [
                 {
-                    "templateId": "layout1",
-                    "attributes": [
-                        {
-                            "name": "bgImgUrl",
-                            "value": "background-image:url('https://cdn1-production-images-kly.akamaized.net/hWmM0PV6saNQ2w4uCcupOhwoSkw=/640x358/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3284603/original/067816900_1604312034-20201102-Aksi-Ratusan-Buruh-Tolak-UU-Cipta-Kerja-iqbal-6.jpg')",
-                            "type": "image"
-                        },
-                        {
-                            "name": "title",
-                            "value": "Polda Metro Jaya Lakukan Pengalihan Arus Lalu Lintas Antisipasi Demo Buruh"
-                        },
-                        {
-                            "name": "contentHtml",
-                            "value": "<p><b>Liputan6.com, Jakarta</b> <a href=\"https://www.liputan6.com/tag/polda-metro-jaya\">Polda Metro Jaya</a> menyiapkan skenario pengalihan lalu lintas untuk mengantisipasi kepadatan arus lantaran ada demo sejumlah <a href=\"https://www.liputan6.com/tag/buruh\">buruh</a> dari berbagai organisasi hari ini, Rabu (8/12/2021).</p><p>Direktur Lalu Lintas Polda Metro Jaya, Kombes Pol Sambodo Purnomo Yogo menerangkan, pihaknya membuat rencana pengalihan arus lalu lintas terutama di ruas jalan menuju Patung Kuda Arjuna Wiwaha, Jakarta Pusat.</p>",
-                            "type": "text"
-                        },
-                        {
-                            "name": "adsContainer",
-                            "value": "div-gpt-ad-headline",
-                            "type": "ads",
-                            "size": [
-                                [320, 100],
-                                [320, 50]
-                            ],
-                            "adunit": "dfp-hl"
-                        }
-                    ]
-                },
-                {
                     "templateId": "layout2",
                     "attributes": [
                         {
@@ -83,6 +54,29 @@
                                 [160, 600]
                             ],
                             "adunit": "dfp-exposer1"
+                        }
+                    ]
+                },
+                {
+                    "templateId": "layout3",
+                    "attributes": [
+                        {
+                            "name": "videoID",
+                            "value": "video-3643678"
+                        },
+                        {
+                            "name": "videoUrl",
+                            "value": "https://www.vidio.com/embed/2363106-3-ribu-buruh-demo-tolak-kenaikan-ump-yang-tak-sesuai-di-patung-kuda-jakpus-liputan-6?source=liputan6-news&medium=embed&autoplay=true&mute=true&player_only=true&sticky=false&embed_position=article-embed"
+                        },
+                        {
+                            "name": "adsContainer",
+                            "value": "div-gpt-ad-headline2",
+                            "type": "ads",
+                            "size": [
+                                [320, 100],
+                                [320, 50]
+                            ],
+                            "adunit": "dfp-hl"
                         }
                     ]
                 }
@@ -181,14 +175,18 @@
     <main class="wrapper">
         <!--initial section page-->
         <div class="screen-page" id="screen1">
-            <div class="page-container" data-bind="template: {data: layoutViewModel, afterRender: layoutScript }">
-                <section class="module parallax" data-bind="attr: {style: bgImgUrl}"></section>
+            <div class="page-container">
+                <section class="module parallax" style="background-image:url('https://cdn1-production-images-kly.akamaized.net/hWmM0PV6saNQ2w4uCcupOhwoSkw=/640x358/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3284603/original/067816900_1604312034-20201102-Aksi-Ratusan-Buruh-Tolak-UU-Cipta-Kerja-iqbal-6.jpg');"></section>
                 <!--first section -->
                 <section class="module content">
                     <div class="container">
-                        <h2 data-bind="text: title"></h2>
-                        <div data-bind="attr: {id: adsContainer}, adsCall: showAds" class="banner"></div>
-                        <div data-bind="html: contentHtml"></div>
+                        <h2>Polda Metro Jaya Lakukan Pengalihan Arus Lalu Lintas Antisipasi Demo Buruh</h2>
+                        <div class="banner" id="div-gpt-ad-headline">
+                            <script>
+                                googletag.cmd.push(function() { googletag.display("div-gpt-ad-headline"); });
+                            </script>
+                        </div>
+                        <div><p><b>Liputan6.com, Jakarta</b> <a href="https://www.liputan6.com/tag/polda-metro-jaya">Polda Metro Jaya</a> menyiapkan skenario pengalihan lalu lintas untuk mengantisipasi kepadatan arus lantaran ada demo sejumlah <a href="https://www.liputan6.com/tag/buruh">buruh</a> dari berbagai organisasi hari ini, Rabu (8/12/2021).</p><p>Direktur Lalu Lintas Polda Metro Jaya, Kombes Pol Sambodo Purnomo Yogo menerangkan, pihaknya membuat rencana pengalihan arus lalu lintas terutama di ruas jalan menuju Patung Kuda Arjuna Wiwaha, Jakarta Pusat.</p></div>
                     </div>
                 </section>
             </div>
@@ -241,7 +239,7 @@
     </template>
     <template id="layout3">
         <div class="page-container" data-bind="template: {data: layoutViewModel, afterRender: layoutScript }">
-            <div data-bind="attr: {id: adsContainer}, adsCall: showAds"></div>
+            <div data-bind="attr: {id: adsContainer}, adsCall: showAds" class="banner"></div>
             <div data-bind="attr: {id: videoID}" id="" class="article-video-gallery--item article-video-gallery--item_normal" data-component-name="mobile:article-video-gallery:item">
                 <iframe data-bind="attr: {src: videoUrl}" 
                     class="vidio-embed article-video-gallery--item__vidio-embed"

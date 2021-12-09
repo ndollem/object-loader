@@ -91,27 +91,6 @@ docReady(function(doc) {
 
     function initPage()
     {
-        //console.log(window.pagingContent);
-
-        this.dt = formatData(1);
-        vm = function(dt){
-            //console.log(dt.viewModel);
-            layoutViewModel = dt.viewModel;
-            layoutScript = function(elements){
-                //put post render script here!
-            };
-        }
-        //add custom binding specific for ads
-        ko.bindingHandlers.adsCall = {
-            init: function(element, valueAccessor, allBindings, viewModel, bindingContext) {
-                // This will be called when the binding is first applied to an element
-                // Set up any initial state, event handlers, etc. here
-                showAds(viewModel.adsContainer, viewModel.adsSize, viewModel.adsUnit);
-            }
-        };
-        
-        ko.applyBindings(vm(this.dt), document.getElementById(pagingName+curPage));
-
         document.getElementById("btnNext").addEventListener("click", loadNext);
     }
 
@@ -131,7 +110,7 @@ docReady(function(doc) {
         //console.log('nextPage '+this.nextPage);
 
         //reading json template
-        if(this.dt = formatData(this.nextPage))
+        if(this.dt = formatData(curPage))
         {
             //console.log(this.dt);
             let tmpl = document.querySelector('#'+this.dt.templateName);
@@ -170,10 +149,16 @@ docReady(function(doc) {
 
             //last action is to call fetch data on every fetchStep const
             if(this.nextPage % fetchStep == 0){
-                //updateing button paging index
+                //updating button paging index
+                //console.log('fetching : '+curPaging);
                 this.setAttribute('data-paging', parseInt(curPaging)+1);
                 fetchData(curPaging);
             }
+
+            //remove next button
+            if(parseInt(curPage) >= window.pagingContent.rows.length)
+                this.classList.add("d-none");
+        
         }else{
             this.classList.add("d-none");
         }
@@ -240,9 +225,6 @@ docReady(function(doc) {
                 return data;
 
             }else{
-                //disabling button
-                document.getElementById("btnNext").classList.add("d-none");
-
                 // make the promise be rejected if we didn't get a 2xx response
                 //throw new Error("Not 2xx response");  
                 return false;              
