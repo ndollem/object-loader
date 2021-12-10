@@ -45,12 +45,13 @@
                 },
                 {
                     "name": "adsContainer",
-                    "value": "div-gpt-ad-showcase4",
+                    "value": "div-gpt-ad-exposer",
                     "type": "ads",
                     "size": [
-                        [300, 250]
+                        [300, 250],
+                        [300, 600],
                     ],
-                    "adunit": "dfp-sc"
+                    "adunit": "dfp-exposer"
                 }
             ]
         },
