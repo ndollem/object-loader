@@ -1,0 +1,84 @@
+{
+    "rows": [
+        {
+            "templateId": "layout8",
+            "attributes": [
+                {
+                    "name": "currentPaging",
+                    "value": "Foto 6 dari 6"
+                },
+                {
+                    "name": "imgUrl",
+                    "value": "foto/baby_rayyanza_anak_nagita_slavina-20211210-008-non_fotografer_kly.jpg"
+                },
+                {
+                    "name": "imgDesc",
+                    "value": "<p>Fotografer Rittar Rajagukguk yang memang menjadi langganan selebritis untuk mengabadikan momen pertama buah hati mereka lah yang dipercaya untuk menjepret gemasnya baby Rayyanza kali ini.</p>",
+                    "type": "text"
+                },
+                {
+                    "name": "adsContainer",
+                    "value": "div-gpt-ad-showcase5",
+                    "type": "ads",
+                    "size": [
+                        [300, 250]
+                    ],
+                    "adunit": "dfp-sc"
+                }
+            ]
+        },
+        {
+            "templateId": "layout5",
+            "attributes": [
+                {
+                    "name": "bacaJugaItems",
+                    "value": [
+                        {
+                            "title": "Jasad yang Hilang di Bawah Abu Semeru",
+                            "url": "https://story.liputan6.com/2712433/volume-157?medium=wiget&campaign=picture-first"
+                        },
+                        {
+                            "title": "Lebih Mengancam dari Gunung Semeru",
+                            "url": "https://story.liputan6.com/2712434/volume-156?medium=wiget&campaign=picture-first"
+                        },
+                        {
+                            "title": "Ibu dan Bayi  Terkubur Lahar Semeru",
+                            "url": "https://story.liputan6.com/2712435/volume-155?medium=wiget&campaign=picture-first"
+                        },
+                        {
+                            "title": "Duka di Kaki Semeru",
+                            "url": "https://story.liputan6.com/2711733/volume-154?medium=wiget&campaign=picture-first"
+                        },
+                        {
+                            "title": "Anak Buah Main HP, Panglima Murka",
+                            "url": "https://story.liputan6.com/2710893/volume-153?medium=wiget&campaign=picture-first"
+                        },
+                        {
+                            "title": "Siapa Ayah Kandung Vanessa Angel?",
+                            "url": "https://story.liputan6.com/2709581/volume-152?medium=wiget&campaign=picture-first"
+                        },
+                        {
+                            "title": "Alasan Korban Penembakan di Exit Tol Bintaro Buntuti Mobil Pejabat DKI",
+                            "url": "https://m.liputan6.com/news/read/4730796/alasan-korban-penembakan-di-exit-tol-bintaro-buntuti-mobil-pejabat-dki"
+                        },
+                        {
+                            "title": "Dibeli di Atas NJOP, Polisi Pastikan Pembeli Tanah Milik Keluarga Nirina Zubir Tak Berniat Jahat",
+                            "url": "https://m.liputan6.com/news/read/4729916/dibeli-di-atas-njop-polisi-pastikan-pembeli-tanah-milik-keluarga-nirina-zubir-tak-berniat-jahat"
+                        }
+                    ]
+                },
+                {
+                    "name": "adsContainer",
+                    "value": "div-gpt-ad-showcase-paging1",
+                    "type": "ads",
+                    "size": [
+                        [300, 250],
+                        [250, 250],
+                        [200, 200]
+                    ],
+                    "adunit": "dfp-sc"
+                }
+            ]
+        }
+    ]
+}
