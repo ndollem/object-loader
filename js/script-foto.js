@@ -146,7 +146,7 @@ docReady(function(doc) {
 
             //make scroll down to new element
             document.getElementById(pagingName+this.nextPage).scrollIntoView(true);
-
+            
             //last action is to call fetch data on every fetchStep const
             if(this.nextPage % fetchStep == 0){
                 //updating button paging index
