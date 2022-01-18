@@ -1,0 +1,1104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kapanlagi</title>
+    <meta name="description" content="Otosia" />
+    <meta name="keywords" content="Otosia" />
+    <meta http-equiv="cache-control" content="public, no-transform" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="" />
+    <link rel="canonical" href="http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/" />
+    <link rel="preconnect" href="http://placehold.it/" crossorigin="anonymous" />
+
+    <!--fontface.css-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        /* latin */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18S0xR41.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDJB9cme.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCds18S0xR41.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZclSds18S0xR41.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu3cOWxw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu3cOWxw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu3cOWxw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+    </style>
+    
+    <!--external.css-->
+    <style>
+        /*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com *//*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */*,::after,::before{box-sizing:border-box}html{-moz-tab-size:4;tab-size:4}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'}hr{height:0;color:inherit}abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}legend{padding:0}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}button{background-color:transparent;background-image:none}fieldset{margin:0;padding:0}ol,ul{list-style:none;margin:0;padding:0}html{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";line-height:1.5}body{font-family:inherit;line-height:inherit}*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:currentColor}hr{border-top-width:1px}img{border-style:solid}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:-moz-focusring{outline:auto}table{border-collapse:collapse}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}button,input,optgroup,select,textarea{padding:0;line-height:inherit;color:inherit}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*,::after,::before{--tw-border-opacity:1;border-color:rgba(229,231,235,var(--tw-border-opacity))}
+    </style>
+
+    <!--kly.css-->
+    <style>
+        /*! UI/UX Designer -- Alfaroni -- Copyright 2022 */
+        /*! utilities */:root{--color-white:#FFFFFF;--color-black:#424242;--color-primary:#DD5284;--color-primary-900:#F30057;--color-border:#ECECEC;--color-gray:#565656;--bg-gray:#F5F5F5;--bg-gray-900:#E9E9E9;--bg-black-opacity:rgba(0,0,0,0.2);--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-primary:'Source Sans Pro', sans-serif}@-ms-viewport{width:device-width}body{position:relative;font-size:14px;background-color:var(--color-white);color:var(--color-black);font-family:var(--font-primary);font-weight:normal;overflow-x:hidden}img{color:transparent}a:hover{color:var(--color-primary)}.text-shadow{text-shadow:2px 2px 5px rgba(0,0,0,0.2)}.text-white{color:var(--color-white)}.text-black{color:var(--color-black)}.text-primary{color:var(--color-primary)}.text-primary-900{color:var(--color-primary-900)}.text-gray{color:var(--color-gray)}.text-gray-900{color:var(--color-gray-900)}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-justify{text-align:justify}.bg-white{background-color:var(--color-white)}.bg-black{background-color:var(--color-black)}.bg-black-opacity{background-color:var(--bg-black-opacity)}.bg-primary{background-color:var(--color-primary)}.bg-primary-900{color:var(--color-primary-900)}.bg-gray{background-color:var(--bg-gray)}.bg-gray-900{background-color:var(--bg-gray-900)}.border,.rounded-border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-l{border-left-width:1px}.border-r{border-right-width:1px}.border-primary,.rounded-border{border-color:var(--color-border)}.rounded-lg,.rounded-border{-webkit-transform:translateZ(0);border-radius:.5rem;overflow:hidden}.font-light{font-weight:300}.font-medium{font-weight:500}.font-semibold{font-weight:600}.font-bold{font-weight:700}.font-black{font-weight:900}.list-none{margin:0;padding:0;list-style-type:none}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.flex{display:flex}.flex-1{flex:1 1 0%}.flex-auto{flex:1 1 auto}.flex-initial{flex:0 1 auto}.flex-none{flex:none}.flex-shrink{flex-shrink:1}.flex-shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.flex-grow-0{flex-grow:0}.flex-row{flex-direction:row}.flex-row-reverse{flex-direction:row-reverse}.flex-col{flex-direction:column}.flex-col-reverse{flex-direction:column-reverse}.flex-wrap{flex-wrap:wrap}.flex-wrap-reverse{flex-wrap:wrap-reverse}.flex-nowrap{flex-wrap:nowrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-around{justify-content:space-around}.justify-evenly{justify-content:space-evenly}.justify-items-start{justify-items:start}.justify-items-end{justify-items:end}.justify-items-center{justify-items:center}.justify-items-stretch{justify-items:stretch}small{display:block}.text-2{font-size:2px}.text-4{font-size:4px}.text-6{font-size:6px}.text-8{font-size:8px}.text-10{font-size:10px}.text-12{font-size:12px}.text-14{font-size:14px}.text-16{font-size:16px}.text-18{font-size:18px}.text-20{font-size:20px}.text-22{font-size:22px}.text-24{font-size:24px}.text-26{font-size:26px}.text-28{font-size:28px}.text-30{font-size:30px}.text-32{font-size:32px}.p-1{padding:.25rem}.pl-1{padding-left:.25rem}.pr-1{padding-right:.25rem}.pt-1{padding-top:.25rem}.pb-1{padding-bottom:.25rem}.px-1{padding-left:.25rem;padding-right:.25rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.m-1{margin:.25rem}.ml-1{margin-left:.25rem}.mr-1{margin-right:.25rem}.mt-1{margin-top:.25rem}.mb-1{margin-bottom:.25rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.my-1{margin-top:.25rem;margin-bottom:.25rem}.-m-1{margin:-.25rem}.-ml-1{margin-left:-.25rem}.-mr-1{margin-right:-.25rem}.-mt-1{margin-top:-.25rem}.-mb-1{margin-bottom:-.25rem}.-mx-1{margin-left:-.25rem;margin-right:-.25rem}.-my-1{margin-top:-.25rem;margin-bottom:-.25rem}.p-2{padding:.5rem}.pl-2{padding-left:.5rem}.pr-2{padding-right:.5rem}.pt-2{padding-top:.5rem}.pb-2{padding-bottom:.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.m-2{margin:.5rem}.ml-2{margin-left:.5rem}.mr-2{margin-right:.5rem}.mt-2{margin-top:.5rem}.mb-2{margin-bottom:.5rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.my-2{margin-top:.5rem;margin-bottom:.5rem}.-m-2{margin:-.5rem}.-ml-2{margin-left:-.5rem}.-mr-2{margin-right:-.5rem}.-mt-2{margin-top:-.5rem}.-mb-2{margin-bottom:-.5rem}.-mx-2{margin-left:-.5rem;margin-right:-.5rem}.-my-2{margin-top:-.5rem;margin-bottom:-.5rem}.p-3{padding:.75rem}.pl-3{padding-left:.75rem}.pr-3{padding-right:.75rem}.pt-3{padding-top:.75rem}.pb-3{padding-bottom:.75rem}.px-3{padding-left:.75rem;padding-right:.75rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.m-3{margin:.75rem}.ml-3{margin-left:.75rem}.mr-3{margin-right:.75rem}.mt-3{margin-top:.75rem}.mb-3{margin-bottom:.75rem}.mx-3{margin-left:.75rem;margin-right:.75rem}.my-3{margin-top:.75rem;margin-bottom:.75rem}.-m-3{margin:-.75rem}.-ml-3{margin-left:-.75rem}.-mr-3{margin-right:-.75rem}.-mt-3{margin-top:-.75rem}.-mb-3{margin-bottom:-.75rem}.-mx-3{margin-left:-.75rem;margin-right:-.75rem}.-my-3{margin-top:-.75rem;margin-bottom:-.75rem}.p-4{padding:1rem}.pl-4{padding-left:1rem}.pr-4{padding-right:1rem}.pt-4{padding-top:1rem}.pb-4{padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.py-4{padding-top:1rem;padding-bottom:1rem}.m-4{margin:1rem}.ml-4{margin-left:1rem}.mr-4{margin-right:1rem}.mt-4{margin-top:1rem}.mb-4{margin-bottom:1rem}.mx-4{margin-left:1rem;margin-right:1rem}.my-4{margin-top:1rem;margin-bottom:1rem}.-m-4{margin:-1rem}.-ml-4{margin-left:-1rem}.-mr-4{margin-right:-1rem}.-mt-4{margin-top:-1rem}.-mb-4{margin-bottom:-1rem}.-mx-4{margin-left:-1rem;margin-right:-1rem}.-my-4{margin-top:-1rem;margin-bottom:-1rem}.p-5{padding:1.25rem}.pl-5{padding-left:1.25rem}.pr-5{padding-right:1.25rem}.pt-5{padding-top:1.25rem}.pb-5{padding-bottom:1.25rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.m-5{margin:1.25rem}.ml-5{margin-left:1.25rem}.mr-5{margin-right:1.25rem}.mt-5{margin-top:1.25rem}.mb-5{margin-bottom:1.25rem}.mx-5{margin-left:1.25rem;margin-right:1.25rem}.my-5{margin-top:1.25rem;margin-bottom:1.25rem}.-m-5{margin:-1.25rem}.-ml-5{margin-left:-1.25rem}.-mr-5{margin-right:-1.25rem}.-mt-5{margin-top:-1.25rem}.-mb-5{margin-bottom:-1.25rem}.-mx-5{margin-left:-1.25rem;margin-right:-1.25rem}.-my-5{margin-top:-1.25rem;margin-bottom:-1.25rem}.p-6{padding:1.5rem}.pl-6{padding-left:1.5rem}.pr-6{padding-right:1.5rem}.pt-6{padding-top:1.5rem}.pb-6{padding-bottom:1.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.m-6{margin:1.5rem}.ml-6{margin-left:1.5rem}.mr-6{margin-right:1.5rem}.mt-6{margin-top:1.5rem}.mb-6{margin-bottom:1.5rem}.mx-6{margin-left:1.5rem;margin-right:1.5rem}.my-6{margin-top:1.5rem;margin-bottom:1.5rem}.-m-6{margin:-1.5rem}.-ml-6{margin-left:-1.5rem}.-mr-6{margin-right:-1.5rem}.-mt-6{margin-top:-1.5rem}.-mb-6{margin-bottom:-1.5rem}.-mx-6{margin-left:-1.5rem;margin-right:-1.5rem}.-my-6{margin-top:-1.5rem;margin-bottom:-1.5rem}.p-7{padding:1.75rem}.pl-7{padding-left:1.75rem}.pr-7{padding-right:1.75rem}.pt-7{padding-top:1.75rem}.pb-7{padding-bottom:1.75rem}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-7{padding-top:1.75rem;padding-bottom:1.75rem}.m-7{margin:1.75rem}.ml-7{margin-left:1.75rem}.mr-7{margin-right:1.75rem}.mt-7{margin-top:1.75rem}.mb-7{margin-bottom:1.75rem}.mx-7{margin-left:1.75rem;margin-right:1.75rem}.my-7{margin-top:1.75rem;margin-bottom:1.75rem}.-m-7{margin:-1.75rem}.-ml-7{margin-left:-1.75rem}.-mr-7{margin-right:-1.75rem}.-mt-7{margin-top:-1.75rem}.-mb-7{margin-bottom:-1.75rem}.-mx-7{margin-left:-1.75rem;margin-right:-1.75rem}.-my-7{margin-top:-1.75rem;margin-bottom:-1.75rem}.p-8{padding:2rem}.pl-8{padding-left:2rem}.pr-8{padding-right:2rem}.pt-8{padding-top:2rem}.pb-8{padding-bottom:2rem}.px-8{padding-left:2rem;padding-right:2rem}.py-8{padding-top:2rem;padding-bottom:2rem}.m-8{margin:2rem}.ml-8{margin-left:2rem}.mr-8{margin-right:2rem}.mt-8{margin-top:2rem}.mb-8{margin-bottom:2rem}.mx-8{margin-left:2rem;margin-right:2rem}.my-8{margin-top:2rem;margin-bottom:2rem}.-m-8{margin:-2rem}.-ml-8{margin-left:-2rem}.-mr-8{margin-right:-2rem}.-mt-8{margin-top:-2rem}.-mb-8{margin-bottom:-2rem}.-mx-8{margin-left:-2rem;margin-right:-2rem}.-my-8{margin-top:-2rem;margin-bottom:-2rem}.p-9{padding:2.25rem}.pl-9{padding-left:2.25rem}.pr-9{padding-right:2.25rem}.pt-9{padding-top:2.25rem}.pb-9{padding-bottom:2.25rem}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-9{padding-top:2.25rem;padding-bottom:2.25rem}.m-9{margin:2.25rem}.ml-9{margin-left:2.25rem}.mr-9{margin-right:2.25rem}.mt-9{margin-top:2.25rem}.mb-9{margin-bottom:2.25rem}.mx-9{margin-left:2.25rem;margin-right:2.25rem}.my-9{margin-top:2.25rem;margin-bottom:2.25rem}.-m-9{margin:-2.25rem}.-ml-9{margin-left:-2.25rem}.-mr-9{margin-right:-2.25rem}.-mt-9{margin-top:-2.25rem}.-mb-9{margin-bottom:-2.25rem}.-mx-9{margin-left:-2.25rem;margin-right:-2.25rem}.-my-9{margin-top:-2.25rem;margin-bottom:-2.25rem}.p-10{padding:2.5rem}.pl-10{padding-left:2.5rem}.pr-10{padding-right:2.5rem}.pt-10{padding-top:2.5rem}.pb-10{padding-bottom:2.5rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.m-10{margin:2.5rem}.ml-10{margin-left:2.5rem}.mr-10{margin-right:2.5rem}.mt-10{margin-top:2.5rem}.mb-10{margin-bottom:2.5rem}.mx-10{margin-left:2.5rem;margin-right:2.5rem}.my-10{margin-top:2.5rem;margin-bottom:2.5rem}.-m-10{margin:-2.5rem}.-ml-10{margin-left:-2.5rem}.-mr-10{margin-right:-2.5rem}.-mt-10{margin-top:-2.5rem}.-mb-10{margin-bottom:-2.5rem}.-mx-10{margin-left:-2.5rem;margin-right:-2.5rem}.-my-10{margin-top:-2.5rem;margin-bottom:-2.5rem}.p-11{padding:2.75rem}.pl-11{padding-left:2.75rem}.pr-11{padding-right:2.75rem}.pt-11{padding-top:2.75rem}.pb-11{padding-bottom:2.75rem}.px-11{padding-left:2.75rem;padding-right:2.75rem}.py-11{padding-top:2.75rem;padding-bottom:2.75rem}.m-11{margin:2.75rem}.ml-11{margin-left:2.75rem}.mr-11{margin-right:2.75rem}.mt-11{margin-top:2.75rem}.mb-11{margin-bottom:2.75rem}.mx-11{margin-left:2.75rem;margin-right:2.75rem}.my-11{margin-top:2.75rem;margin-bottom:2.75rem}.-m-11{margin:-2.75rem}.-ml-11{margin-left:-2.75rem}.-mr-11{margin-right:-2.75rem}.-mt-11{margin-top:-2.75rem}.-mb-11{margin-bottom:-2.75rem}.-mx-11{margin-left:-2.75rem;margin-right:-2.75rem}.-my-11{margin-top:-2.75rem;margin-bottom:-2.75rem}.p-12{padding:3rem}.pl-12{padding-left:3rem}.pr-12{padding-right:3rem}.pt-12{padding-top:3rem}.pb-12{padding-bottom:3rem}.px-12{padding-left:3rem;padding-right:3rem}.py-12{padding-top:3rem;padding-bottom:3rem}.m-12{margin:3rem}.ml-12{margin-left:3rem}.mr-12{margin-right:3rem}.mt-12{margin-top:3rem}.mb-12{margin-bottom:3rem}.mx-12{margin-left:3rem;margin-right:3rem}.my-12{margin-top:3rem;margin-bottom:3rem}.-m-12{margin:-3rem}.-ml-12{margin-left:-3rem}.-mr-12{margin-right:-3rem}.-mt-12{margin-top:-3rem}.-mb-12{margin-bottom:-3rem}.-mx-12{margin-left:-3rem;margin-right:-3rem}.-my-12{margin-top:-3rem;margin-bottom:-3rem}.p-13{padding:3.25rem}.pl-13{padding-left:3.25rem}.pr-13{padding-right:3.25rem}.pt-13{padding-top:3.25rem}.pb-13{padding-bottom:3.25rem}.px-13{padding-left:3.25rem;padding-right:3.25rem}.py-13{padding-top:3.25rem;padding-bottom:3.25rem}.m-13{margin:3.25rem}.ml-13{margin-left:3.25rem}.mr-13{margin-right:3.25rem}.mt-13{margin-top:3.25rem}.mb-13{margin-bottom:3.25rem}.mx-13{margin-left:3.25rem;margin-right:3.25rem}.my-13{margin-top:3.25rem;margin-bottom:3.25rem}.-m-13{margin:-3.25rem}.-ml-13{margin-left:-3.25rem}.-mr-13{margin-right:-3.25rem}.-mt-13{margin-top:-3.25rem}.-mb-13{margin-bottom:-3.25rem}.-mx-13{margin-left:-3.25rem;margin-right:-3.25rem}.-my-13{margin-top:-3.25rem;margin-bottom:-3.25rem}.p-14{padding:3.5rem}.pl-14{padding-left:3.5rem}.pr-14{padding-right:3.5rem}.pt-14{padding-top:3.5rem}.pb-14{padding-bottom:3.5rem}.px-14{padding-left:3.5rem;padding-right:3.5rem}.py-14{padding-top:3.5rem;padding-bottom:3.5rem}.m-14{margin:3.5rem}.ml-14{margin-left:3.5rem}.mr-14{margin-right:3.5rem}.mt-14{margin-top:3.5rem}.mb-14{margin-bottom:3.5rem}.mx-14{margin-left:3.5rem;margin-right:3.5rem}.my-14{margin-top:3.5rem;margin-bottom:3.5rem}.-m-14{margin:-3.5rem}.-ml-14{margin-left:-3.5rem}.-mr-14{margin-right:-3.5rem}.-mt-14{margin-top:-3.5rem}.-mb-14{margin-bottom:-3.5rem}.-mx-14{margin-left:-3.5rem;margin-right:-3.5rem}.-my-14{margin-top:-3.5rem;margin-bottom:-3.5rem}.p-15{padding:3.75rem}.pl-15{padding-left:3.75rem}.pr-15{padding-right:3.75rem}.pt-15{padding-top:3.75rem}.pb-15{padding-bottom:3.75rem}.px-15{padding-left:3.75rem;padding-right:3.75rem}.py-15{padding-top:3.75rem;padding-bottom:3.75rem}.m-15{margin:3.75rem}.ml-15{margin-left:3.75rem}.mr-15{margin-right:3.75rem}.mt-15{margin-top:3.75rem}.mb-15{margin-bottom:3.75rem}.mx-15{margin-left:3.75rem;margin-right:3.75rem}.my-15{margin-top:3.75rem;margin-bottom:3.75rem}.-m-15{margin:-3.75rem}.-ml-15{margin-left:-3.75rem}.-mr-15{margin-right:-3.75rem}.-mt-15{margin-top:-3.75rem}.-mb-15{margin-bottom:-3.75rem}.-mx-15{margin-left:-3.75rem;margin-right:-3.75rem}.-my-15{margin-top:-3.75rem;margin-bottom:-3.75rem}.p-16{padding:4rem}.pl-16{padding-left:4rem}.pr-16{padding-right:4rem}.pt-16{padding-top:4rem}.pb-16{padding-bottom:4rem}.px-16{padding-left:4rem;padding-right:4rem}.py-16{padding-top:4rem;padding-bottom:4rem}.m-16{margin:4rem}.ml-16{margin-left:4rem}.mr-16{margin-right:4rem}.mt-16{margin-top:4rem}.mb-16{margin-bottom:4rem}.mx-16{margin-left:4rem;margin-right:4rem}.my-16{margin-top:4rem;margin-bottom:4rem}.-m-16{margin:-4rem}.-ml-16{margin-left:-4rem}.-mr-16{margin-right:-4rem}.-mt-16{margin-top:-4rem}.-mb-16{margin-bottom:-4rem}.-mx-16{margin-left:-4rem;margin-right:-4rem}.-my-16{margin-top:-4rem;margin-bottom:-4rem}.p-17{padding:4.25rem}.pl-17{padding-left:4.25rem}.pr-17{padding-right:4.25rem}.pt-17{padding-top:4.25rem}.pb-17{padding-bottom:4.25rem}.px-17{padding-left:4.25rem;padding-right:4.25rem}.py-17{padding-top:4.25rem;padding-bottom:4.25rem}.m-17{margin:4.25rem}.ml-17{margin-left:4.25rem}.mr-17{margin-right:4.25rem}.mt-17{margin-top:4.25rem}.mb-17{margin-bottom:4.25rem}.mx-17{margin-left:4.25rem;margin-right:4.25rem}.my-17{margin-top:4.25rem;margin-bottom:4.25rem}.-m-17{margin:-4.25rem}.-ml-17{margin-left:-4.25rem}.-mr-17{margin-right:-4.25rem}.-mt-17{margin-top:-4.25rem}.-mb-17{margin-bottom:-4.25rem}.-mx-17{margin-left:-4.25rem;margin-right:-4.25rem}.-my-17{margin-top:-4.25rem;margin-bottom:-4.25rem}.p-18{padding:4.5rem}.pl-18{padding-left:4.5rem}.pr-18{padding-right:4.5rem}.pt-18{padding-top:4.5rem}.pb-18{padding-bottom:4.5rem}.px-18{padding-left:4.5rem;padding-right:4.5rem}.py-18{padding-top:4.5rem;padding-bottom:4.5rem}.m-18{margin:4.5rem}.ml-18{margin-left:4.5rem}.mr-18{margin-right:4.5rem}.mt-18{margin-top:4.5rem}.mb-18{margin-bottom:4.5rem}.mx-18{margin-left:4.5rem;margin-right:4.5rem}.my-18{margin-top:4.5rem;margin-bottom:4.5rem}.-m-18{margin:-4.5rem}.-ml-18{margin-left:-4.5rem}.-mr-18{margin-right:-4.5rem}.-mt-18{margin-top:-4.5rem}.-mb-18{margin-bottom:-4.5rem}.-mx-18{margin-left:-4.5rem;margin-right:-4.5rem}.-my-18{margin-top:-4.5rem;margin-bottom:-4.5rem}.p-19{padding:4.75rem}.pl-19{padding-left:4.75rem}.pr-19{padding-right:4.75rem}.pt-19{padding-top:4.75rem}.pb-19{padding-bottom:4.75rem}.px-19{padding-left:4.75rem;padding-right:4.75rem}.py-19{padding-top:4.75rem;padding-bottom:4.75rem}.m-19{margin:4.75rem}.ml-19{margin-left:4.75rem}.mr-19{margin-right:4.75rem}.mt-19{margin-top:4.75rem}.mb-19{margin-bottom:4.75rem}.mx-19{margin-left:4.75rem;margin-right:4.75rem}.my-19{margin-top:4.75rem;margin-bottom:4.75rem}.-m-19{margin:-4.75rem}.-ml-19{margin-left:-4.75rem}.-mr-19{margin-right:-4.75rem}.-mt-19{margin-top:-4.75rem}.-mb-19{margin-bottom:-4.75rem}.-mx-19{margin-left:-4.75rem;margin-right:-4.75rem}.-my-19{margin-top:-4.75rem;margin-bottom:-4.75rem}.p-20{padding:5rem}.pl-20{padding-left:5rem}.pr-20{padding-right:5rem}.pt-20{padding-top:5rem}.pb-20{padding-bottom:5rem}.px-20{padding-left:5rem;padding-right:5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.m-20{margin:5rem}.ml-20{margin-left:5rem}.mr-20{margin-right:5rem}.mt-20{margin-top:5rem}.mb-20{margin-bottom:5rem}.mx-20{margin-left:5rem;margin-right:5rem}.my-20{margin-top:5rem;margin-bottom:5rem}.-m-20{margin:-5rem}.-ml-20{margin-left:-5rem}.-mr-20{margin-right:-5rem}.-mt-20{margin-top:-5rem}.-mb-20{margin-bottom:-5rem}.-mx-20{margin-left:-5rem;margin-right:-5rem}.-my-20{margin-top:-5rem;margin-bottom:-5rem}.w-1\/1{width:100%}.w-1\/2{width:50%}.w-1\/3{width:33.33333%}.w-1\/4{width:25%}.w-1\/5{width:20%}.w-1\/6{width:16.66667%}.w-1\/7{width:14.28571%}.w-1\/8{width:12.5%}.w-1\/9{width:11.11111%}.w-1\/10{width:10%}.w-1\/11{width:9.09091%}.w-1\/12{width:8.33333%}.swiper-button-prev{left:-18px;background-image:url(data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20fill%3D%22none%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%23fff%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2037c9.389%200%2017-7.611%2017-17S29.389%203%2020%203%203%2010.611%203%2020s7.611%2017%2017%2017z%22%20clip-rule%3D%22evenodd%22%2F%3E%3Cpath%20fill%3D%22%23E50000%22%20fill-rule%3D%22evenodd%22%20d%3D%22M19.202%2019.999l5.13-4.267a.255.255%200%200%200%20.089-.171.248.248%200%200%200-.061-.182l-1.13-1.291a.253.253%200%200%200-.174-.087.263.263%200%200%200-.186.06l-2.502%202.12-4.28%203.629a.248.248%200%200%200%200%20.378l6.782%205.751c.047.04.106.061.167.061a.272.272%200%200%200%20.194-.087l1.129-1.291a.244.244%200%200%200%20.06-.183.242.242%200%200%200-.089-.17l-5.13-4.27z%22%20clip-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E)}.swiper-button-next{right:-18px;background-image:url(data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20fill%3D%22none%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%23fff%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%203C10.611%203%203%2010.611%203%2020s7.611%2017%2017%2017%2017-7.611%2017-17S29.389%203%2020%203z%22%20clip-rule%3D%22evenodd%22%2F%3E%3Cpath%20fill%3D%22%23E50000%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20.798%2020.001l-5.13%204.267a.255.255%200%200%200-.089.171.248.248%200%200%200%20.061.182l1.13%201.291a.253.253%200%200%200%20.174.087.263.263%200%200%200%20.186-.06l2.502-2.12%204.28-3.629a.248.248%200%200%200%200-.378l-6.782-5.751a.257.257%200%200%200-.167-.061.27.27%200%200%200-.194.088l-1.129%201.29a.244.244%200%200%200-.06.182.245.245%200%200%200%20.089.171l5.13%204.27z%22%20clip-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E)}.swiper-button-prev,.swiper-button-next{width:36px;height:36px;background-size:contain;background-repeat:no-repeat;top:0;margin-top:37px}.swiper-button-prev::after,.swiper-button-next::after{display:none !important}.container{position:relative;max-width:none;margin-left:auto;margin-right:auto}.w-kly{width:1056px !important;max-width:none !important}.max-w-full{max-width:100%}.form-group{display:flex;align-items:center;min-width:280px;min-height:34px;border-radius:8px;overflow:hidden;border:1px solid var(--color-border)}.form-control{outline:none !important;flex:1;width:100%;min-height:36px;padding-left:.75rem;padding-right:.75rem;background-color:transparent;font-size:12px}.form-btn .btn{outline:none !important;min-height:100%;padding-left:.75rem;padding-right:.75rem}
+        /*! header */.header{position:relative;top:0;font-size:18px;background-color:var(--color-white);box-shadow:0 3px 4px 0 rgba(52,52,52,0.18);z-index:20}.header-btn{min-height:80px}.header-link{display:inline-block;background-color:var(--color-primary-900);color:var(--color-white) !important;font-size:11px;border-radius:4px;text-transform:uppercase;font-weight:600;padding:6px 12px}.header-logo{width:140px;height:40px;background-size:contain;background-repeat:no-repeat;background-position:center;display:inline-block;text-indent:-999px}.header-collapse{position:fixed;top:0;left:0;right:0;bottom:0;z-index:20;overflow-y:auto;background-color:var(--color-white)}.header-collapse-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background-color:var(--bg-black-opacity);z-index:-1}.header-collapse-inner{background-color:var(--color-white);position:relative;z-index:1}.header-collapse-item:not(:first-child){border-top:1px solid var(--color-border)}.header-collapse-nav-item.active a{color:var(--color-primary)}.header-collapse-nav-item a{display:block;padding-top:.75rem;padding-bottom:.75rem}.header-collapse-nav-item a::before{content:"";border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:4px solid var(--color-primary);display:inline-block;vertical-align:middle;margin-right:.25rem;margin-top:-3px}.header-collapse--menu{transition:transform .5s ease;transform:translateX(-100%)}.header-collapse--menu.open{transform:translateX(0)}.header-collapse--menu .header-collapse-inner{height:100%}.header-collapse--menu .header-collapse-header{border-bottom:1px solid var(--color-border);min-height:80px}.header-collapse--menu .header-collapse-footer{background-color:var(--bg-gray);min-height:50px}
+        /*! icons */.icon{display:inline-block;vertical-align:middle;margin-top:-3px}.icon::after{content:"";display:block;background-position:center;background-size:contain;background-repeat:no-repeat;width:18px;height:18px}.icon--sm::after{width:14px;height:14px}.icon--lg::after{width:30px;height:30px}.icon--image{object-fit:contain;object-position:center}.icon--backtop::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/backtop.svg")}.icon--live::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/live.svg")}.icon--menubar::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/menusearch.svg")}.icon--close::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/close.svg")}.icon--lip6::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/footer/lip6.svg")}.icon--bintang::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/footer/bintang.svg")}.icon--bolacom::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/footer/bolacom.svg")}.icon--bolanet::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/footer/bolanet.svg")}.icon--diadona::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/footer/diadona.svg")}.icon--dream::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/footer/dream.svg")}.icon--fimela::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/footer/fimela.svg")}.icon--manissedap::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/footer/manissedap.svg")}.icon--mdk::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/footer/mdk.svg")}.icon--otosia::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/footer/otosia.svg")}.icon--photo::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/photo.svg")}.icon--arrownext::after{background-image:url("http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/prev.png");width:30px;height:30px}
+        /*! footer */.footer{font-size:12px;color:var(--color-gray);background-color:var(--bg-gray)}.footer-item:not(:first-child){border-top:1px solid var(--color-border)}.footer-logo{width:140px;height:40px;background-size:contain;background-repeat:no-repeat;background-position:center;display:inline-block;text-indent:-999px}.footer-title{font-size:14px;font-weight:700;text-transform:uppercase}.footer-nav,.footer-channels{margin:-.5rem}.footer-nav-item,.footer-channels-item{padding:.5rem}.footer-nav-item .icon,.footer-channels-item .icon{margin-right:.5rem}.footer-nav{color:var(--color-black)}.footer-nav-item a{text-transform:uppercase}.footer-socmed{margin-top:1rem}.footer-socmed-item{margin-right:.5rem}
+    
+        /*! components */img.lazyload:not([src]){visibility:hidden}.lazyload,.lazyloading{opacity:0}.lazyloaded{opacity:1;transition-duration:.5s;transition-property:opacity, transform;transition-delay:3s, 0s;transition-timing-function:ease}.aspect-\[19\/11\]{aspect-ratio:19 / 11}.aspect-\[16\/9\]{aspect-ratio:16 / 9}.aspect-square{aspect-ratio:1 / 1}.aspect-landscape{aspect-ratio:375 / 250}.aspect-portrait{aspect-ratio:375 / 514}.aspect-\[170\/296\]{aspect-ratio:170 / 296}.aspect-\[271\/305\]{aspect-ratio:271 / 305}.aspect-\[153\/140\]{aspect-ratio:153 / 140}.overflow-y-auto{-ms-overflow-style:none;scrollbar-width:none}.overflow-y-auto::-webkit-scrollbar{display:none}.item{position:relative;overflow:hidden}.item-img,.item-vidio{background-color:var(--color-border);position:relative;display:block;overflow:hidden}.item-vidio{border-radius:8px}.item-vidio-inner{margin:-5px}.item-vidio-inner iframe{aspect-ratio:16 / 9;width:100%;height:auto}.item-img{background-color:var(--color-border);position:relative;display:block;overflow:hidden;width:100%}.item-img-info{position:absolute;right:0;bottom:0;font-family:var(--font-prompt);background-color:var(--bg-black-opacity);color:var(--color-white);padding:.25rem .5rem;font-size:12px;z-index:2}.item-img a,.item-img img{display:block;width:100%;height:100%}.item-img img{object-fit:cover}.item-img[data-duration]:hover .icon--play{opacity:1}.item-img[data-duration] .icon--play{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);opacity:0;transition:opacity .5s ease;z-index:2}.item-img[data-duration]::after{content:attr(data-duration);position:absolute;right:0;bottom:0;font-family:var(--font-prompt);background-color:var(--bg-black-opacity);color:var(--color-white);padding:.25rem .5rem;font-size:12px;z-index:2}.item-desc{position:relative;line-height:1.4}.item-desc-tag,.item-desc-time{display:inline-block;vertical-align:top}.item-desc-title,.item-desc-text{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}.item--absolute .item-desc{position:absolute;left:0;bottom:0;width:100%;height:100%;display:flex;flex-flow:column;justify-content:flex-end;align-items:flex-start;color:var(--color-white);background:linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%)}.main{position:relative;background-color:var(--color-white);z-index:10}.main-nav{background-color:var(--color-primary);min-height:40px}.main-nav-swiper-slide a{display:flex;align-items:center;font-size:15px;padding-left:.75rem;padding-right:.75rem;min-height:100%;color:var(--color-white)}.main-nav-swiper-slide:first-of-type a{padding-left:1rem}.main-nav-swiper-slide:last-of-type a{padding-right:1rem}.main-nav-swiper-slide.active a{font-weight:700}.main-breadcrumb{color:var(--color-gray);font-size:11px;margin-top:-.25rem}.main-breadcrumb-item{margin-top:.25rem}.main-breadcrumb-item:not(:last-of-type)::after{content:"»";margin:0 .25rem}.pages-item:not(:first-of-type){margin-top:2rem}.pages-item:not(:first-of-type) .lazyloaded{transition-delay:.2s, 0s}.pages-item-hidden{display:none}.pages-title{font-size:20px;font-weight:600}.pages-img-ratio{background-color:var(--color-border);position:relative;display:block;overflow:hidden;width:100%}.pages-img-ratio img{width:100%;height:100%;object-fit:cover}.pages-img-desc-copyright{font-size:12px;color:var(--color-gray);font-style:italic;text-align:center;padding-top:.5rem}.pages-paragraph p{font-size:16px}.pages-paragraph p:not(:last-of-type){margin-bottom:1.5rem}.pages-number{position:relative;display:flex;justify-content:center;align-items:center}.pages-number::after{content:"";border-top:1px solid var(--color-border);position:absolute;width:100%;top:50%;left:0}.pages-number-text{position:relative;background-color:var(--color-white);padding-left:.5rem;padding-right:.5rem;z-index:3}.pages-button{border:1px solid var(--color-primary);color:var(--color-primary);font-size:18px;font-weight:600;width:100%;min-height:48px;border-radius:8px}.pages-button-countdown,.pages-button-hidden{display:none}.pages-button.disabled{filter:grayscale(1) opacity(0.5);pointer-events:none}.pages-button.disabled .pages-button-countdown{display:inline-block}.banner{background-color:var(--color-border);color:var(--color-gray);text-align:center}.banner-inner img{margin:auto}.banner--billboard{position:sticky;top:0;z-index:-1}.banner--billboard .banner-inner img{width:100%;height:100%;object-fit:cover;aspect-ratio:200 / 221}.banner--bottomframe{position:fixed;bottom:0;left:0;right:0;z-index:12;background-color:rgba(255,255,255,0.5);padding-top:.5rem;padding-bottom:.5rem}.banner--inherit{background-color:inherit}.box:not(:last-of-type){margin-bottom:2.5rem}.box.box--banner-top{margin-bottom:0}.box--video{border-top:1px solid var(--color-border);padding-top:1.5rem}.box--terkait-list{margin-top:-.75rem;margin-bottom:-.75rem}.box--terkait-list-item{padding-top:.75rem;padding-bottom:.75rem;border-top:1px solid var(--color-border)}.box--terkait-list-item-image,.box--terkait-list-item:first-of-type{border-top:0}.box--terkait-list .item--text-img{width:105px}.box--stories{background-color:#F6BDC1}.box--stories-list-item{min-width:170px}.box--stories-list-item .btnBox{background-color:#000000;width:100%;height:100%}.box--stories-list-item .btnBox-box{display:flex;flex-flow:column;align-items:center;color:var(--color-white)}.box--stories-list-item .btnBox-box .icon{display:block;margin-bottom:.5rem}.box--topik-list{margin-right:-.5rem;margin-bottom:-.5rem}.box--topik-list-item{margin-right:.5rem;margin-bottom:.5rem}.box--topik-list-item a{display:flex;align-items:center;justify-content:center;min-height:40px;border-radius:40px;font-weight:600;background-color:#FFFAFA;color:var(--color-primary);border:1px solid;padding-left:1rem;padding-right:1rem}.box--more-list{display:grid;grid-template-columns:271px repeat(2, 153px);grid-template-rows:repeat(2, 140px);grid-gap:25px;padding-right:1rem;min-height:305px}.box--more-list-item{width:271px;height:305px;grid-area:1 / 1 / 3 / 2}.box--more-list-item .item{width:100%;height:100%}.box--more-list-item .item-desc-photo{background-color:var(--color-border);border-radius:28px;min-height:28px;padding-left:1rem;padding-right:1rem;display:flex;align-items:center;justify-content:center;color:var(--color-gray)}.box--more-list-item .item-desc-photo .icon{margin-top:0}.box--more-list-item .item-desc-title{font-size:16px}.box--more-list-item:not(:first-of-type){width:153px;height:140px;grid-area:inherit}.box--more-list-item:not(:first-of-type) .item-desc-photo{font-size:8px;border-radius:16px;min-height:16px;padding-left:.5rem;padding-right:.5rem}.box--more-list-item:not(:first-of-type) .item-desc-photo .icon::after{width:10px;height:10px}.box--more-list-item:not(:first-of-type) .item-desc-title{font-size:10px}.backtop{display:flex;align-items:center;justify-content:center;color:var(--color-primary)}.btn{width:100%;min-height:48px;border-radius:8px;font-size:18px;font-weight:600}.btn--outline{color:var(--color-primary);border:1px solid var(--color-primary)}
+
+    </style>
+
+
+    <!--BEGIN KLY GLOBAL OBJECT-->
+	<script type="text/javascript">
+		window.kly = {};
+		window.kly.env = "production";
+		window.kly.baseAssetsUrl = "";
+		window.kly.gtm = {
+			"adblockExists":"no",
+			"articleId":97416,
+			"articleTitle":"13 Potret Gemasnya Baby Rayyanza Anak Nagita Slavina dan Raffi Ahmad Saat Menjalani Newborn Photoshoot, Berpose di Stroller Viral Rafathar - Menjelma Jadi Topping Sushi",
+			"category":"article",
+			"editors":"Renisya Satya Putri",
+			"editorialType":"editorial",
+			"embedVideo":false,
+			"pageTitle":"13 Potret Gemasnya Baby Rayyanza Anak Nagita Slavina dan Raffi Ahmad Saat Menjalani Newborn Photoshoot, Berpose di Stroller Viral Rafathar - Menjelma Jadi Topping Sushi - Kapanlagi.com",
+			"publicationDate":"2021-12-10",
+			"publicationTime":"08:40:00",
+			"subCategory":"foto",
+			"subSubCategory":"Foto Indonesia",
+			"tag":"Anak Selebriti|Anak Selebritis Indonesia|Berita Terbaru Nagita Slavina|Keluarga Raffi Ahmad|Photoshoot Artis|Picture First|Raffi Ahmad Berita Terbaru|Trending|konten trending",
+			"authors":{
+				"type":"editor",
+				"names":"Renisya Satya Putri"
+			},
+			"numberOfWords":84,
+			"enabled":true,
+			"log":false,
+			"imageCreation":false,
+			"type":"PhotoGallery",
+			"videos":"",
+			"partner":"",
+			"isSEO":false,
+			"contributors":"",
+			"reporters":"",
+			"photographers":"",
+			"login_status":"",
+			"new_exp":"paging_var1",
+			"audience":"family-and-parenting|parenting-children-aged-4-11|parenting-babies-and-toddlers|kids-content|kids-content|male-content|female-content|photography",
+			"pageParam":3
+		};
+		window.kly.visitor = {
+			"title":"13 Potret Gemasnya Baby Rayyanza Anak Nagita Slavina dan Raffi Ahmad Saat Menjalani Newborn Photoshoot, Berpose di Stroller Viral Rafathar - Menjelma Jadi Topping Sushi",
+			"publicationDate":"2021-12-10",
+			"publicationTime":"08:40:00",
+			"isAdultContent":false,
+			"tag":[
+				"anak selebriti",
+				"anak selebritis indonesia",
+				"berita terbaru nagita slavina",
+				"keluarga raffi ahmad",
+				"photoshoot artis",
+				"picture first",
+				"raffi ahmad berita terbaru",
+				"trending",
+				"konten trending"
+			],
+			"subCategory":"foto",
+			"subSubCategory":"Foto Indonesia",
+			"type":"PhotoGallery",
+			"pageType":"Readpage",
+			"platform":"Mobile",
+			"audience":[
+				"family-and-parenting",
+				"parenting-children-aged-4-11",
+				"parenting-babies-and-toddlers",
+				"kids-content",
+				"kids-content",
+				"male-content",
+				"female-content",
+				"photography"
+			],
+			"gaid":"",
+			"age":"",
+			"gender":"",
+			"site":"Kapanlagi",
+			"login_status":""
+		};
+		window.kly.platform = "Mobile";
+		window.kly.pageType = "Readpage";
+		window.kly.channel = {
+			"id":46,
+			"name":"foto",
+			"full_slug":"foto"
+		};
+		window.kly.category = {
+			"id":46,
+			"name":"Foto Indonesia",
+			"full_slug":"foto\/berita-foto\/indonesia"
+		};
+		window.kly.article = {
+			"id":97416,
+			"title":"13 Potret Gemasnya Baby Rayyanza Anak Nagita Slavina dan Raffi Ahmad Saat Menjalani Newborn Photoshoot, Berpose di Stroller Viral Rafathar - Menjelma Jadi Topping Sushi",
+			"type":"PhotoGallery",
+			"shortDescription":"Baby Rayyanza putra kedua Nagita Slavina dan Raffi Ahmad sukses bikin netizen gemas saat menjalani newborn photoshoot dengan beragam konsep lucu.",
+			"keywords":"Nagita Slavina, Raffi Ahmad, Rafathar Malik Ahmad",
+			"isAdvertorial":false,
+			"isMultipage":true,
+			"isAdultContent":false,
+			"verifyAge":false,
+			"publishDate":"2021-12-10 08:40:00"
+		};
+		window.kly.site = "Kapanlagi";
+		window.kly.related_system = "tag";
+		window.kly.multiplePageCount = 13;
+
+	</script>
+	<!--ENDOF KLY GLOBAL OBJECT-->
+
+    <!--GPT Tag ads-->
+    <script async defer src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+        window.googletag = window.googletag || {cmd: []};
+        googletag.cmd.push(function() {
+            googletag.defineSlot('/36504930/m.liputan6.com/dfp-topfrm', [1, 1], 'div-gpt-ad-topfrm').addService(googletag.pubads());
+            googletag.defineSlot('/36504930/m.liputan6.com/dfp-bottomfrm', [[320, 100], [320, 50]], 'div-gpt-ad-bottomframe').addService(googletag.pubads());
+    
+            // Register event handlers to observe lazy loading behavior.
+            googletag.pubads().addEventListener('slotRequested', function(event) {
+                console.log(event.slot.getSlotElementId() + ' fetched');
+            });
+
+            googletag.pubads().addEventListener('slotOnload', function(event) {
+                console.log(event.slot.getSlotElementId() + ' rendered');
+            });
+            
+            googletag.pubads().collapseEmptyDivs();
+            googletag.pubads().setTargeting('dummy', "1");
+            googletag.enableServices();
+            googletag.display("div-gpt-ad-topfrm");
+            googletag.display("div-gpt-ad-bottomframe");
+            
+        });
+        
+        function showAds(adsContainer, size, adunit){
+            if(adsContainer && size && adunit)
+            {
+                //convert size attribute from string to array
+                    var sizes = [];
+                    size.split(",").forEach(function(item, index){
+                        sizes[index] = item.split("x").map(Number);
+                    });
+
+                //making adrequest
+                googletag.cmd.push(function() {
+                    googletag.defineSlot('/36504930/m.liputan6.com/'+adunit, sizes, adsContainer)
+                        .setTargeting('dummy', '1')    
+                        .addService(googletag.pubads());
+                    googletag.display(adsContainer);
+                });
+            }
+        }
+    </script>
+    <!--GPT Tag ads-->
+    <style>
+        /*centering ads container*/
+        .banner-inner div iframe{ margin: auto;}
+    </style>
+
+</head>
+<body x-data="{ menu: false }" :class="[menu ? 'overflow-hidden' : '']">
+
+    <!--banner.billboard-->
+    <style>
+        div#div-gpt-ad-topfrm-parallax-wrapper {
+            width: 100vw;
+            height: 110.41666666666667vw;
+            position: relative;
+            clear: both;
+            overflow: hidden;
+            background: #333333;
+            background-image: url(https://preview-kly.akamaized.net/logo_placeholder_kly.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    
+        #div-gpt-ad-liputan6-topfrm-oop {
+            position: fixed;
+            width: 100vw;
+            left: 0;
+            z-index: 2;
+        }
+    </style>
+    <div class="banner" id="div-gpt-ad-topfrm-parallax-wrapper">
+        <div class="banner-inner lazyload" id='div-gpt-ad-topfrm' data-info='ad'></div>
+    </div>
+    <!--banner.billboard-->
+    <!--div class="banner banner--billboard">
+        <div class="banner-inner lazyload">
+            <img width="200" height="221" src="http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/Billboard.png" alt="banner">
+        </div>
+    </div-->
+
+    <!--header-->
+    <header class="header">
+        <div class="container max-w-full">
+            <div class="header-body flex items-center justify-between">
+                <div class="header-item">
+                    <button type="button" class="header-btn header-btn--menu px-4" @click="menu = true" name="btn-menubar" aria-label="btn-menubar"><i class="icon icon--lg icon--menubar"></i></button>
+                    <div class="header-collapse header-collapse--menu" :class="[menu ? 'open' : '']">
+                        <div class="header-collapse-inner flex flex-col justify-between">
+                            <div class="header-collapse-header flex items-center justify-between px-4">
+                                <span class="header-collapse-header-item"><a href="/" class="header-logo" style="background-image: url('http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/logo.svg')">Logo</a></span>
+                                <button type="button" class="header-btn header-btn--close px-4 -mr-4" @click="menu = false" name="btn-closemenubar" aria-label="btn-closemenubar"><i class="icon icon--lg icon--close"></i></button>
+                            </div>
+                            <div class="header-collapse-body overflow-y-auto flex-1">
+                                <div class="header-collapse-item p-4">
+                                    <ul class="header-collapse-nav list-none flex flex-wrap items-start">
+                                        <li class="header-collapse-nav-item active w-1/2"><a href="/">Trending</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Selebriti</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Hollywood</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Musik</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Korea</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Lirik Lagu</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Film</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Lifestyle</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Kuis</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Dangdut</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Video Terbaru</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Bollywood</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Intermezzone</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Kapanlagi Plus</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Video Selebriti</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Profil Selebriti</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Rumah Selebriti</a></li>
+                                        <li class="header-collapse-nav-item w-1/2"><a href="/">Game Gratis</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-collapse-footer flex items-center justify-between px-4">
+                                <a href="#">Kontak</a>
+                                <a href="#">Kebijakan Privasi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-item flex-1"><a href="/" class="header-logo" style="background-image: url('http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/logo.svg')">Logo</a></div>
+                <div class="header-item">
+                    <a href="/" class="header-link header-link--live mx-4">Live <i class="icon icon--sm icon--live ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--main-->
+    <main class="main pb-16" role="main">
+        <div class="container max-w-full">
+            <div class="main-nav flex justify-center">
+                <div class="main-nav-swiper flex flex-nowrap overflow-y-auto">
+                    <div class="main-nav-swiper-slide"><a href="/">BERITA</a></div>
+                    <div class="main-nav-swiper-slide"><a href="/">FOTO</a></div>
+                    <div class="main-nav-swiper-slide"><a href="/">KOREA</a></div>
+                    <div class="main-nav-swiper-slide"><a href="/">MUSIK</a></div>
+                    <div class="main-nav-swiper-slide"><a href="/">DANGDUT</a></div>
+                    <div class="main-nav-swiper-slide"><a href="/">KUIS</a></div>
+                    <div class="main-nav-swiper-slide active"><a href="/">ARTIS</a></div>
+                </div> 
+            </div>
+            <div class="main-body p-4">
+                <ul class="main-breadcrumb flex flex-wrap mb-2">
+                    <li class="main-breadcrumb-item"><a href="/">FOTO</a></li>
+                    <li class="main-breadcrumb-item"><a href="/">BERITA FOTO</a></li>
+                </ul>
+
+                <script>
+                    document.addEventListener('alpine:init', () => {
+                        Alpine.data('app', () => ({
+                            pages: [
+                                {
+                                    page: 2,
+                                    pageMax: 7,
+                                    src: 'http://placehold.it/375x514',
+                                    srcModel: 'portrait',
+                                    srcCopyright: 'Hak Cipta: Instagram Naysila Mirdad/frst',
+                                    paragraph: '<p>Dalam kesempatan yang sama, dirinya juga meminta didoakan. "Pokoknya aku minta didoakan saja semuanya yang terbaik," tutur Naysila Mirdad</p>',
+                                    buttonText: 'Lanjutkan Membaca Setelah',
+                                    buttonDelay: 7,
+                                    banner: [
+                                        {
+                                            name: 'headline-page-2',
+                                            container: 'div-gpt-ad-headline-page-2',
+                                            type: 'display',
+                                            size: ['320x100', '320x50'],
+                                            adunit: 'dfp-hl',                                            
+                                        }
+                                    ],
+                                    trending: [
+                                        {
+                                            embed: 'https://www.vidio.com/embed/2350967-spider-man-homecoming?autoplay=true&player_only=true&live_chat=false&enable_websocket=false&mute=false&',
+                                            embedTitle: 'Ponds White Beauty Brightening Micellar Water, mampu mencerahkan kulit anda.' 
+                                        }
+                                    ]
+                                },
+                                {
+                                    page: 3,
+                                    pageMax: 7,
+                                    src: 'http://placehold.it/375x250',
+                                    srcModel: 'landscape',
+                                    srcCopyright: 'Hak Cipta: Instagram Naysila Mirdad/frst',
+                                    paragraph: ' <p>Jamal Mirdad yang berada di samping putrinya tersebut juga ikut mendoakan gar sang putri selalu sehat dan selamat dunia akhirat.</p>',
+                                    buttonText: 'Lanjutkan Membaca Setelah',
+                                    buttonDelay: 5,
+                                    banner: [
+                                        {
+                                            name: 'exposer-page-3',
+                                            container: 'div-gpt-ad-exposer-page-3',
+                                            type: 'display',
+                                            size: ['300x250', '300x600', '160x600'],
+                                            adunit: 'dfp-exposer'
+                                        }
+                                    ]
+                                },
+                                {
+                                    page: 4,
+                                    pageMax: 7,
+                                    src: 'http://placehold.it/375x250',
+                                    srcModel: 'landscape',
+                                    srcCopyright: 'Hak Cipta: Instagram Naysila Mirdad/frst',
+                                    paragraph: '<p>Naysilla Mirdad berpacaran dengan pengusaha muda Roestiandi Tsamanov selama kurang lebih 5 tahun. Menurut Jamal Mirdad, Nay ingin melangsungkan pernikahannya tahun ini namun...</p>',
+                                    buttonText: 'Lanjutkan Membaca Setelah',
+                                    buttonDelay: 5,
+                                    terkait: [
+                                        {
+                                            text: 'Ramai Isu Mualaf, Naysilla Mirdad Bocorkan Lagu Rohani Kristen Favoritnya',
+                                            textLink: '/',
+                                        },
+                                        {
+                                            text: 'Rutin Rayakan Natal, Naysilla Mirdad Justru Rindukan Sosok Ini',
+                                            textLink: '/',
+                                        },
+                                        {
+                                            text: 'Naysila Mirdad Sebut Perayaan Natal Tahun Ini Terasa Berbeda, Kenapa?',
+                                            textLink: '/',
+                                        }
+                                    ],
+                                    banner: [
+                                        {
+                                            name: 'showcase-page-4',
+                                            container: 'div-gpt-ad-showcase-page-4',
+                                            type: 'display',
+                                            size: ['300x250'],
+                                            adunit: 'dfp-sc'
+                                        }
+                                    ]
+                                },
+                                {
+                                    page: 5,
+                                    pageMax: 7,
+                                    src: 'https://www.vidio.com/embed/2350967-spider-man-homecoming?autoplay=true&player_only=true&live_chat=false&enable_websocket=false&mute=false&',
+                                    srcModel: 'video',
+                                    srcCopyright: 'Hak Cipta: Instagram Naysila Mirdad/frst',
+                                    paragraph: '<p>Dalam kesempatan yang sama, dirinya juga meminta didoakan. "Pokoknya aku minta didoakan saja semuanya yang terbaik," tutur Naysila Mirdad</p>',
+                                    buttonText: 'Lanjutkan Membaca Setelah',
+                                    buttonDelay: 5,
+                                    banner: [
+                                        {
+                                            name: 'showcase-page-5',
+                                            container: 'div-gpt-ad-showcase-page-5',
+                                            type: 'display',
+                                            size: ['300x250'],
+                                            adunit: 'dfp-sc',
+                                        }
+                                    ]
+                                },
+                                {
+                                    page: 6,
+                                    pageMax: 7,
+                                    src: 'http://placehold.it/375x250',
+                                    srcModel: 'landscape',
+                                    srcCopyright: 'Hak Cipta: Instagram Naysila Mirdad/frst',
+                                    paragraph: '<p>Dalam kesempatan yang sama, dirinya juga meminta didoakan. "Pokoknya aku minta didoakan saja semuanya yang terbaik," tutur Naysila Mirdad</p>',
+                                    buttonText: 'Selanjutnya',
+                                    terkait: [
+                                        {
+                                            image: 'http://placehold.it/105x105',
+                                            text: 'Ramai Isu Mualaf, Naysilla Mirdad Bocorkan Lagu Rohani Kristen Favoritnya',
+                                            textLink: '/',
+                                            date: '12 April 2019'
+                                        },
+                                        {
+                                            image: 'http://placehold.it/105x105',
+                                            text: 'Rutin Rayakan Natal, Naysilla Mirdad Justru Rindukan Sosok Ini',
+                                            textLink: '/',
+                                            date: '12 April 2019'
+                                        },
+                                        {
+                                            image: 'http://placehold.it/105x105',
+                                            text: 'Naysila Mirdad Sebut Perayaan Natal Tahun Ini Terasa Berbeda, Kenapa?',
+                                            textLink: '/',
+                                            date: '12 April 2019'
+                                        }
+                                    ],
+                                    banner: [
+                                        {
+                                            name: 'exposer-page-6',
+                                            container: 'div-gpt-ad-exposer-page-6',
+                                            type: 'display',
+                                            size: ['300x250', '300x600', '160x600'],
+                                            adunit: 'dfp-exposer'
+                                        }
+                                    ]
+                                },
+                                {
+                                    page: 7,
+                                    pageMax: 7,
+                                    src: 'http://placehold.it/375x250',
+                                    srcModel: 'landscape',
+                                    srcCopyright: 'Hak Cipta: Instagram Naysila Mirdad/frst',
+                                    paragraph: '<p>Dalam kesempatan yang sama, dirinya juga meminta didoakan. "Pokoknya aku minta didoakan saja semuanya yang terbaik," tutur Naysila Mirdad</p>',
+                                    buttonText: 'Explore More',
+                                    banner: [
+                                        {
+                                            name: 'headline-page-7',
+                                            container: 'div-gpt-ad-headline-page-7',
+                                            type: 'display',
+                                            size: ['320x100', '320x50'],
+                                            adunit: 'dfp-hl'
+                                        }
+                                    ]
+                                },
+                                {
+                                    page: 8,
+                                    pageType: 'explore',
+                                    banner: [
+                                        {
+                                            name: 'showcase-page-8',
+                                            container: 'div-gpt-ad-showcase-page-8',
+                                            type: 'display',
+                                            size: ['300x250'],
+                                            adunit: 'dfp-sc'
+                                        }
+                                    ]
+                                }
+                            ],
+                        }))
+                    })
+                </script>
+                <div class="pages" x-data="app">
+
+                    <!--pages.intro-->
+                    <div id="pages-intro" class="pages-item">
+                        
+                        <!--box.pages-->
+                        <div class="box box--pages">
+                            <div class="box-body">
+                                <h1 class="pages-title mb-2">7 Potret Cantik Naysila Mirdad yang Dikabarkan Sudah Pindah Agama - Kerap Tutup Mulut Saat Ditanya Kebenarannya</h1>
+                                <div class="pages-span text-12 mb-4">
+                                    <span class="pages-auth text-primary mr-1"><a href="/">Sora Soraya</a></span>
+                                    <span class="pages-date text-gray">Rabu, 18 November 2020 08:52</span>
+                                </div>
+                                <figure class="pages-img -mx-4 mb-4">
+                                    <span class="pages-img-ratio aspect-landscape"><img class="lazyload" data-src="http://placehold.it/375x250" alt="image" width="375" height="250"></span>
+                                    <figcaption class="pages-img-desc">
+                                        <p class="pages-img-desc-copyright px-4">Hak Cipta: Instagram Naysila Mirdad/frs</p>
+                                    </figcaption>
+                                </figure>
+                                <div class="pages-paragraph">
+                                    <p>Naysila Mirdad dikabarkan sudah menjadi mualaf. Kabar ini beredar saat dirinya berencana untuk maju ke jenjang selanjutnya dengan menikahi sang kekasih Roestiandi Tsamanov.</p>
+                                    <p>Seperti apa cerita selengkapnya? Yuk simak di sini.</p>
+                                </div> 
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--pages.1-->
+                    <div id="pages-1" class="pages-item">
+                        
+                        <!--pages.number-->
+                        <div class="pages-number mb-4"><span class="pages-number-text">Foto <b class="font-semibold">1 dari 8</b></span></div>
+
+                        <!--box.pages-->
+                        <div class="box box--pages">
+                            <div class="box-body">
+                                <figure class="pages-img -mx-4 mb-4">
+                                    <span class="pages-img-ratio aspect-portrait"><img class="lazyload" data-src="http://placehold.it/375x514" alt="image" width="375" height="514"></span>
+                                    <figcaption class="pages-img-desc">
+                                        <p class="pages-img-desc-copyright px-4">Hak Cipta: Instagram Naysila Mirdad/frs</p>
+                                    </figcaption>
+                                </figure>
+                                <div class="pages-paragraph">
+                                    <p>"Kenapa selalu dibawa ke arah sana?" ujar Naysila Mirdad, saat ditemui di Pengadilan Agama Jakarta Selatan, Selasa (14/12/2021).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="pages-button mt-6" data-target="pages-2"><span class="pages-button-text">Selanjutnya</span></button>
+                        
+                    </div> 
+
+                    <template x-for="item in pages" :key="item.page">
+                        <div :id="`pages-${item.page}`" class="pages-item pages-item-hidden">
+
+                            <!--pages.number-->
+                            <template x-if="item.pageMax">
+                                <div class="pages-number mb-4"><span class="pages-number-text">Foto <b class="font-semibold" x-text="`${item.page} dari ${item.pageMax}`"></b></div>
+                            </template>
+
+                            <!--banner-->
+                            <template x-for="banner in item.banner">
+                                <template x-if="banner.adunit == 'dfp-hl'">
+                                    <div class="box box--banner box--banner-top -mx-4">
+                                        <div x-bind="banner" class="banner py-4" > 
+                                            <h2 class="banner-title mb-2">Advertisement - Scroll untuk Melanjutkan</h2>
+                                            <div class="banner-inner">
+                                                <div class="banner-inner" :id="banner.container" >
+                                                    <!--img :src="banner.src" width="320" height="100" alt="banner"-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </template>
+                            </template>
+
+                            <!--box.terkait-->
+                            <template x-if="item.terkait">
+                                <div class="box box--terkait">
+                                    <h1 class="box-title text-primary text-24 font-bold mb-3">Berita Terkait</h1>
+                                    <div class="box-body">
+                                        <ul class="box--terkait-list list-none">
+                                            <template x-for="list in item.terkait">
+                                                <li class="box--terkait-list-item" :class="[list.image ? 'box--terkait-list-item-image' : '']">
+                                                    <template x-if="list.image">
+                                                        <figure class="item item--text flex items-start justify-between">
+                                                            <figcaption class="item-desc flex-1 pr-4">
+                                                                <h2 class="item-desc-title text-16 font-semibold mb-2"><a :href="list.textLink" x-text="list.text"></a></h2>
+                                                                <span class="item-desc-time text-12" x-text="list.date"></span>
+                                                            </figcaption>
+                                                            <span class="item--text-img"><a href="/" :href="list.textLink" class="item-img aspect-square rounded-lg"><img class="lazyload" :data-src="list.image" width="105" height="105" alt="image"></a></span>
+                                                        </figure>
+                                                    </template>
+                                                    <template x-if="!list.image">
+                                                        <h2 class="item-desc-title font-semibold"><a :href="list.textLink" x-text="list.text"></a></h2>
+                                                    </template>
+                                                </li>
+                                            </template>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </template>
+
+                            <!--box.pages-->
+                            <template x-if="item.src">
+                                <div class="box box--pages">
+                                    <figure class="pages-img -mx-4 mb-4">
+                                        <span class="pages-img-ratio" :class="`aspect-${item.srcModel}`">
+                                            <template x-if="item.srcModel == 'landscape'">
+                                                <img class="lazyload" :data-src="item.src" width="375" height="250" alt="image">
+                                            </template>
+                                            <template x-if="item.srcModel == 'portrait'">
+                                                <img class="lazyload" :data-src="item.src" width="375" height="514" alt="image">
+                                            </template>
+                                            <template x-if="item.srcModel == 'video'">
+                                                <div class="item-vidio-inner">
+                                                    <iframe class="vidio-embed lazyload" :data-src="item.src" width="560" height="317" scrolling="no" frameborder="0" allowfullscreen allow="encrypted-media *;" title="video"></iframe>
+                                                    <script src="//static-web-prod-vidio.akamaized.net/assets/javascripts/vidio-embed.js"></script>
+                                                </div>
+                                            </template>
+                                        </span> 
+                                        <figcaption class="pages-img-desc">
+                                            <p class="pages-img-desc-copyright px-4" x-text="item.srcCopyright"></p>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="pages-paragraph" x-html="item.paragraph"></div> 
+                                </div>
+                            </template>
+                            
+                            <!--box.trending-->
+                            <template x-if="item.trending">
+                                <div class="box box--video">
+                                    <h1 class="box-title text-18 text-gray font-semibold mb-3">TRENDING HARI INI</h1>
+                                    <div class="box-body">
+                                        <template x-for="vid in item.trending">
+                                            <figure class="item">
+                                                <div class="item-vidio">
+                                                    <div class="item-vidio-inner">
+                                                        <iframe class="vidio-embed lazyload" :data-src="vid.embed" width="560" height="317" scrolling="no" frameborder="0" allowfullscreen allow="encrypted-media *;" title="video"></iframe>
+                                                        <script src="//static-web-prod-vidio.akamaized.net/assets/javascripts/vidio-embed.js"></script>
+                                                    </div>
+                                                </div>
+                                                <figcaption class="item-desc pt-2">
+                                                    <h1 class="item-desc-title text-18 font-semibold" x-text="vid.embedTitle"></h1>
+                                                </figcaption>
+                                            </figure>
+                                        </template>
+                                    </div>
+                                </div>
+                            </template>
+
+                            <!--banner-->
+                            <template x-for="banner in item.banner">
+                                <template x-if="banner.adunit !== 'dfp-hl'">
+                                    <div class="box box--banner -mx-4">
+                                        <div x-bind="banner" class="banner py-4">
+                                            <h2 class="banner-title mb-2">Advertisement - Scroll untuk Melanjutkan</h2>
+                                            <div class="banner-inner">
+                                                <template x-if="banner.adunit == 'dfp-exposer'">
+                                                    <div class="banner-inner" :id="banner.container" ></div>
+                                                    <!--img :src="banner.src" width="300" height="600" alt="banner"-->
+                                                </template>
+                                                <template x-if="banner.adunit == 'dfp-sc'">
+                                                    <div class="banner-inner" :id="banner.container" ></div>
+                                                    <!--img :src="banner.src" width="300" height="250" alt="banner"-->
+                                                </template>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </template>
+                            </template>
+
+
+                            <!--pages.button-->
+                            <template x-if="item.buttonText">
+                                <button class="pages-button mt-6" :data-target="`pages-${item.page+1}`" :class="{'disabled':  item.buttonDelay}">
+                                    <span class="pages-button-text" x-text="item.buttonText"></span>
+                                    <template x-if="item.buttonDelay">
+                                        <span class="pages-button-countdown" :data-delay="item.buttonDelay" x-text="`(${item.buttonDelay})`"></span>
+                                    </template>
+                                </button>
+                            </template>
+
+                            <!--pages.explore-->
+                            <template x-if="item.pageType == 'explore'">
+                                <div class="box box--explore">
+                                    <!--box.more-->
+                                    <div class="box box--more">
+                                        <h1 class="box-title text-primary text-24 font-bold mb-3">More Pictures</h1>
+                                        <div class="box-body">
+                                            <ul class="box--more-list overflow-y-auto list-none -mx-4 pl-4" x-data="{
+                                                stories: [
+                                                    {
+                                                        id: 1,
+                                                        img: 'http://placehold.it/271x305',
+                                                        maxPhoto: 12,
+                                                        title: 'Nia Ramadhani: Repot Mau Beli Sate Naik Motor',
+                                                    },
+                                                    {
+                                                        id: 2,
+                                                        img: 'http://placehold.it/153x140',
+                                                        maxPhoto: 10,
+                                                        title: 'Dear Fans Metallica, Koleksi Mobil James Hetfield Bakal Dipamerkan Lho',
+                                                    },
+                                                    {
+                                                        id: 3,
+                                                        img: 'http://placehold.it/153x140',
+                                                        maxPhoto: 8,
+                                                        title: 'Suami Nia Ramadhani Ajak Anak-Anaknya Naik Motor, Netizen Salah Fokus',
+                                                    },
+                                                    {
+                                                        id: 4,
+                                                        img: 'http://placehold.it/153x140',
+                                                        maxPhoto: 15,
+                                                        title: 'Jajal Lamborghini Baru, Atta Halilintar Sempat Bingung Cara Mundur',
+                                                    },
+                                                    {
+                                                        id: 5,
+                                                        img: 'http://placehold.it/153x140',
+                                                        maxPhoto: 10,
+                                                        title: '3 Motor Paul Walker Terjual di Pelelangan, Ada yang Kustom',
+                                                    },
+                                                ]
+                                            }">
+                                                <template x-for="list in stories">
+                                                    <li class="box--more-list-item">
+                                                        <figure class="item item--absolute rounded-lg">
+                                                            <a href="/">
+                                                                <template x-if="list.id == '1'">
+                                                                    <span class="item-img aspect-[271/305]"><img class="lazyload" :data-src="list.img" width="271" height="305" alt="image"></span>
+                                                                </template>
+                                                                <template x-if="list.id > '1'">
+                                                                    <span class="item-img aspect-[153/140]"><img class="lazyload" :data-src="list.img" width="153" height="140" alt="image"></span>
+                                                                </template>
+        
+                                                                <figcaption class="item-desc p-4">
+                                                                    <span class="item-desc-photo mb-2">
+                                                                        <i class="icon icon--photo mr-1"></i> <span class="item-desc-photo-text" x-text="`${list.maxPhoto} Foto`"></span>
+                                                                    </span>
+                                                                    <p class="item-desc-title font-semibold" x-text="list.title"></p>
+                                                                </figcaption>
+                                                            </a>
+                                                        </figure>
+                                                    </li>
+                                                </template>
+                                            </ul>
+                                        </div>
+                                    </div>
+        
+                                    <!--box.topik-->
+                                    <div class="box box--topik">
+                                        <h1 class="box-title text-primary text-24 font-bold mb-3">Topik Terkait</h1>
+                                        <div class="box-body">
+                                            <ul class="box--topik-list flex flex-wrap list-none">
+                                                <li class="box--topik-list-item"><a href="/">Atta Halilintar</a></li>
+                                                <li class="box--topik-list-item"><a href="/">Aurel Hermansyah</a></li>
+                                                <li class="box--topik-list-item"><a href="/">Ashanty</a></li>
+                                                <li class="box--topik-list-item"><a href="/">Anang</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+        
+        
+                                    <!--box.stories-->
+                                    <div class="box box--stories -mx-4 py-6 px-4">
+                                        <h1 class="box-title text-primary text-24 font-bold mb-3"><img class="icon icon--image" src="http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/storieslogo.svg" width="120" height="28"></h1>
+                                        <div class="box-body">
+                                            <ul class="box--stories-list flex flex-nowrap overflow-y-auto list-none -mx-4 pl-4" x-data="{
+                                                stories: [
+                                                    {
+                                                        img: 'http://placehold.it/170x296',
+                                                        title: 'Nia Ramadhani: Repot Mau Beli Sate Naik Motor',
+                                                    },
+                                                    {
+                                                        img: 'http://placehold.it/170x296',
+                                                        title: 'Dear Fans Metallica, Koleksi Mobil James Hetfield Bakal Dipamerkan Lho',
+                                                    },
+                                                    {
+                                                        img: 'http://placehold.it/170x296',
+                                                        title: 'Suami Nia Ramadhani Ajak Anak-Anaknya Naik Motor, Netizen Salah Fokus',
+                                                    },
+                                                    {
+                                                        img: 'http://placehold.it/170x296',
+                                                        title: 'Jajal Lamborghini Baru, Atta Halilintar Sempat Bingung Cara Mundur',
+                                                    },
+                                                    {
+                                                        img: 'http://placehold.it/170x296',
+                                                        title: '3 Motor Paul Walker Terjual di Pelelangan, Ada yang Kustom',
+                                                    },
+                                                    {
+                                                        btn: 'Selengkapnya',
+                                                        btnLink: '/'
+                                                    }
+                                                ]
+                                            }">
+                                                <template x-for="list in stories">
+                                                    <li class="box--stories-list-item mr-4">
+                                                        <template x-if="!list.btn">
+                                                            <figure class="item item--absolute rounded-lg">
+                                                                <a href="/">
+                                                                    <span class="item-img aspect-[170/296]"><img class="lazyload" :data-src="list.img" width="170" height="296" alt="image"></span>
+                                                                    <figcaption class="item-desc p-4">
+                                                                        <p class="item-desc-title text-20 font-bold" x-text="list.title"></p>
+                                                                    </figcaption>
+                                                                </a>
+                                                            </figure>
+                                                        </template>
+                                                        <template x-if="list.btn">
+                                                            <div class="btnBox flex items-center justify-center rounded-lg">
+                                                                <a href="/" class="btnBox-box"><i class="icon icon--arrownext"></i> Selengkapnya</a>
+                                                            </div>
+                                                        </template>
+        
+                                                    </li>
+                                                </template>
+                                            </ul>
+                                        </div>
+                                    </div>
+        
+                                    <!--banner-->
+                                    <template x-for="banner in item.banner">
+                                        
+                                        <div class="box box--banner box--banner-top -mx-4">
+                                            <div x-bind="banner" class="banner py-4">
+                                                <h2 class="banner-title mb-2">Advertisement - Scroll untuk Melanjutkan</h2>
+                                                <div class="banner-inner">
+                                                    <div class="banner-inner" :id="banner.container" >
+                                                        <!--img :src="banner.src" width="320" height="100" alt="banner"-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    </template>
+        
+                                    <!--box.trending-->
+                                    <div class="box box--trending">
+                                        <div class="box-body">
+                                            <figure class="item">
+                                                <div class="item-vidio">
+                                                    <div class="item-vidio-inner">
+                                                        <iframe class="vidio-embed lazyload" data-src="https://www.vidio.com/embed/2350967-spider-man-homecoming?autoplay=true&player_only=true&live_chat=false&enable_websocket=false&mute=false&" width="560" height="317" scrolling="no" frameborder="0" allowfullscreen allow="encrypted-media *;" title="video"></iframe>
+                                                        <script src="//static-web-prod-vidio.akamaized.net/assets/javascripts/vidio-embed.js"></script>
+                                                    </div>
+                                                </div>
+                                                <figcaption class="item-desc pt-2">
+                                                    <h1 class="item-desc-title text-18 font-semibold">Ponds White Beauty Brightening Micellar Water, mampu mencerahkan kulit anda.</h1>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+        
+                                    <!--box.readmore-->
+                                    <div class="box box--terkait">
+                                        <h1 class="box-title text-primary text-24 font-bold mb-3">Read More</h1>
+                                        <div class="box-body">
+                                            <ul class="box--terkait-list list-none" x-data="{
+                                                terkait: [
+                                                    {
+                                                        image: 'http://placehold.it/105x105',
+                                                        text: 'Ramai Isu Mualaf, Naysilla Mirdad Bocorkan Lagu Rohani Kristen Favoritnya',
+                                                        textLink: '/',
+                                                        tag: 'Showbiz',
+                                                        tagLink: '/',
+                                                        date: '12 April 2019'
+                                                    },
+                                                    {
+                                                        image: 'http://placehold.it/105x105',
+                                                        text: 'Rutin Rayakan Natal, Naysilla Mirdad Justru Rindukan Sosok Ini',
+                                                        textLink: '/',
+                                                        tag: 'Showbiz',
+                                                        tagLink: '/',
+                                                        date: '12 April 2019'
+                                                    },
+                                                    {
+                                                        image: 'http://placehold.it/105x105',
+                                                        text: 'Naysila Mirdad Sebut Perayaan Natal Tahun Ini Terasa Berbeda, Kenapa?',
+                                                        textLink: '/',
+                                                        tag: 'Showbiz',
+                                                        tagLink: '/',
+                                                        date: '12 April 2019'
+                                                    },
+                                                    {
+                                                        image: 'http://placehold.it/105x105',
+                                                        text: 'Kang Daniel To Embark On Solo Fan Meeting Tour In Hong Kong',
+                                                        textLink: '/',
+                                                        tag: 'Showbiz',
+                                                        tagLink: '/',
+                                                        date: '12 April 2019'
+                                                    },
+                                                    {
+                                                        image: 'http://placehold.it/105x105',
+                                                        text: 'The Most Searched K-Pop Related Words On YouTube In 2019',
+                                                        textLink: '/',
+                                                        tag: 'Showbiz',
+                                                        tagLink: '/',
+                                                        date: '12 April 2019'
+                                                    }
+                                                ]
+                                            }">
+                                                <template x-for="list in terkait">
+                                                    <li class="box--terkait-list-item box--terkait-list-item-image">
+                                                        <figure class="item item--text flex items-start justify-between">
+                                                            <figcaption class="item-desc flex-1 pr-4">
+                                                                <a class="item-desc-tag text-12 text-primary mb-1" :href="list.tagLink"  x-text="list.tag"></a>
+                                                                <h2 class="item-desc-title text-16 font-semibold mb-2"><a :href="list.textLink" x-text="list.text"></a></h2>
+                                                                <span class="item-desc-time text-gray text-12" x-text="list.date"></span>
+                                                            </figcaption>
+                                                            <span class="item--text-img"><a href="/" :href="list.textLink" class="item-img aspect-square rounded-lg"><img class="lazyload" :data-src="list.image" width="105" height="105" alt="image"></a></span>
+                                                        </figure>
+                                                    </li>
+                                                </template>
+                                            </ul>
+                                            <button type="button" class="btn btn--outline btn--loadmore mt-8" aria-label="btn">Load More</button>
+                                        </div>
+                                    </div>
+        
+                                    <!--backtotop-->
+                                    <a href="#" class="backtop mt-10" aria-label="backtop">Back to Top <i class="icon icon--backtop ml-2"></i></a>
+        
+                                    <!--footer-->
+                                    <footer class="footer -mx-4 -mb-12 mt-10 pb-12">
+                                        <div class="container max-w-full">
+                                            <div class="footer-body p-4">
+                                                <div class="footer-item py-6">
+                                                <a href="/" class="footer-logo mb-4" style="background-image: url('http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/logo.svg')">Logo</a>
+                                                <p class="footer-copyright">Copyright © 2020 kapanlagi.com <br>KLY KapanLagi Youniverse All Right Reserved</p>
+                                                </div>
+                                                <div class="footer-item py-6">
+                                                    <ul class="footer-channels list-none flex flex-wrap items-start">
+                                                        <li class="footer-channels-item w-1/2"><a href="/"><i class="icon icon--lip6"></i> Liputan6.com</a></li>
+                                                        <li class="footer-channels-item w-1/2"><a href="/"><i class="icon icon--otosia"></i >Otosia.com</a></li>
+                                                        <li class="footer-channels-item w-1/2"><a href="/"><i class="icon icon--bolacom"></i> Bola.com</a></li>
+                                                        <li class="footer-channels-item w-1/2"><a href="/"><i class="icon icon--dream"></i> Dream.co.id</a></li>
+                                                        <li class="footer-channels-item w-1/2"><a href="/"><i class="icon icon--bolanet"></i> Bola.net</a></li>
+                                                        <li class="footer-channels-item w-1/2"><a href="/"><i class="icon icon--diadona"></i> Diadona.id</a></li>
+                                                        <li class="footer-channels-item w-1/2"><a href="/"><i class="icon icon--mdk"></i> Merdeka.com</a></li>
+                                                        <li class="footer-channels-item w-1/2"><a href="/"><i class="icon icon--manissedap"></i> Manisdansedap.com</a></li>
+                                                        <li class="footer-channels-item w-1/2"><a href="/"><i class="icon icon--fimela"></i> Fimela.com</a></li>
+                                                        <li class="footer-channels-item w-1/2"><a href="/"><i class="icon icon--bintang"></i> Bintang.com</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="footer-item py-6">
+                                                    <ul class="footer-nav list-none flex flex-wrap items-start">
+                                                        <li class="footer-nav-item w-1/2"><a href="/">Iklan</a></li> 
+                                                        <li class="footer-nav-item w-1/2"><a href="/">Karir</a></li> 
+                                                        <li class="footer-nav-item w-1/2"><a href="/">Kontak</a></li> 
+                                                        <li class="footer-nav-item w-1/2"><a href="/">Redaksi</a></li> 
+                                                        <li class="footer-nav-item w-1/2"><a href="/">Disclaimer</a></li>  
+                                                        <li class="footer-nav-item w-1/2"><a href="/">Sitemap</a></li> 
+                                                        <li class="footer-nav-item w-1/2"><a href="/">Privasi</a></li> 
+                                                        <li class="footer-nav-item w-1/2"><a href="/">Arsip Berita</a></li> 
+                                                        <li class="footer-nav-item w-1/2"><a href="/">Kode Etik</a></li>
+                                                        <li class="footer-nav-item w-1/2"><a href="/">RSS</a></li> 
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--banner.bottom-frame-->
+    <div class="banner banner--bottomframe">
+        <div class="banner-inner banner-inner[320/50] lazyload" id="div-gpt-ad-bottomframe">
+            <!--img width="320" height="50" src="http://dev-ui.kl-youniverse.com/dev-alfaroni/2022/01Januari/KLxAlpinejs/assets/BottomFrame.png" alt="banner"-->
+        </div>
+    </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"  defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.7.1/cdn.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+        let parent = document.querySelector('.main-nav-swiper')
+            parentTarget = parent.getElementsByClassName('active')[0]
+
+        parent.scrollTo({
+            left: parentTarget.offsetLeft - 100,
+            behavior: 'smooth'
+        })
+
+        var buttons = document.getElementsByClassName('pages-button');
+        for(var i=0; i<buttons.length; i++){
+            buttons[i].addEventListener("click", function(e){ 
+                let target = e.currentTarget
+                attr = target.getAttribute('data-target')
+                selected =  document.querySelector('#'+attr)
+                selectedCount = selected.getElementsByClassName('pages-button-countdown')[0]
+        
+                target.classList.add('pages-button-hidden');
+                if(target.classList.contains('pages-button-hidden')){
+                    selected.classList.remove('pages-item-hidden');
+                    
+                    if(selectedCount){
+                        let userHasScrolled = 0
+                        window.addEventListener('scroll', (e) => {  
+                            if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 100) {
+                                if(userHasScrolled == 0){
+                                    let counter = selectedCount.getAttribute('data-delay')
+                                    setInterval(function(){
+                                        counter--;
+                                        if (counter >= 0) {
+                                            selectedCount.innerHTML = "(" + counter + ")";
+                                        }
+                                        if (counter === 0) {
+                                            selectedCount.parentNode.classList.remove('disabled')
+                                            clearInterval(counter);
+                                        }
+                                    }, 1000);
+                                }
+                                userHasScrolled = 1;  
+                            }
+                        })
+                    }
+                }
+        
+                var headerOffset = 20;
+                    elementPosition = selected.getBoundingClientRect().top;
+                    offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                })
+        
+                let selectedBanner = selected.getElementsByClassName('banner')[0]
+                    adsContainer = selectedBanner.getAttribute('container')
+                    adsSize = selectedBanner.getAttribute('size')
+                    adsUnit = selectedBanner.getAttribute('adunit')
+        
+                showAds(adsContainer, adsSize, adsUnit)
+                
+                e.preventDefault();
+
+            })
+        }
+
+        document.querySelector('.backtop').addEventListener("click", function(e) {
+
+            window.scrollTo({ top: 0, behavior: 'smooth'})
+            e.preventDefault();
+
+        });
+
+    });
+    </script>
+
+</body>
+</html>

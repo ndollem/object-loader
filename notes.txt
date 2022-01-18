@@ -1,0 +1,18 @@
+1. Tambahkan Global object var dari kmklabs / kly
+2. Tambah GPT tag di head untuk initiate ads pertama
+3. Ubah container dan style untuk mobile billboard
+4. update banner field di json dengan struktur : 
+    banner: [
+        {
+            name: 'headline-page-2',    //nama dari inventory
+            container: 'div-gpt-ad-headline-page-2',    //nama div container tempat dimana ads akan di render
+            type: 'display',    //type jenis ads [display | native | OOP]
+            size: ['320x100', '320x50'],  // ads sizes, bisa multiple
+            adunit: 'dfp-hl'    // nama code adunti yg tercatat di GAM
+        }
+    ]
+5. Update struktur container ads dengan memindah ID element container render ke div yg paling dalam.
+6. Keluarkan function showAds() dari main.js ke dalam GPT tag code di section head
+7. Update struktur div placeholder untuk ads agar ada standarisasi
+8. pertimbangkan untuk load ads hanya di kisaran 6-7x dalam 1 page untuk menghindari unfilled
+9. Naikkan posisi Button Selanjutnya (sekitar 120px) karena overlapping dengan image banner bottom frame
